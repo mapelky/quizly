@@ -1,0 +1,3 @@
+# Crawlers must fetch pages to read noindex in HTML and X-Robots-Tag.
+User-agent: *
+Allow: /

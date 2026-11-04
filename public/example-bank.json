@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "description": "Wyłącznie autorski przykład formatu, 3 pytania techniczne do sprawdzenia aplikacji. To nie jest baza ITExamAnswers.",
+  "questions": [
+    {
+      "id": "przyklad-1",
+      "moduleId": 1,
+      "type": "single_select",
+      "prompt": "Które urządzenie przekazuje pakiety pomiędzy różnymi sieciami IP?",
+      "options": [
+        { "id": "a", "text": "Router" },
+        { "id": "b", "text": "Pasywny panel krosowy" },
+        { "id": "c", "text": "Repeater warstwy fizycznej" }
+      ],
+      "correctOptionIds": ["a"],
+      "explanation": "Router analizuje docelowy adres IP i korzysta z tablicy routingu do wybrania drogi do sieci docelowej."
+    },
+    {
+      "id": "przyklad-2",
+      "moduleId": 14,
+      "type": "multiple_select",
+      "prompt": "Które dwie cechy opisują TCP?",
+      "options": [
+        { "id": "a", "text": "Ustanawia połączenie przed transmisją danych." },
+        { "id": "b", "text": "Wykorzystuje potwierdzenia i retransmisję." },
+        { "id": "c", "text": "Nie zawiera numerów portów." },
+        { "id": "d", "text": "Działa w warstwie fizycznej." }
+      ],
+      "correctOptionIds": ["a", "b"],
+      "explanation": "TCP jest protokołem transportowym zorientowanym na połączenie. Numery sekwencyjne, potwierdzenia i retransmisje pomagają dostarczyć dane w odpowiedniej kolejności."
+    },
+    {
+      "id": "przyklad-3",
+      "moduleId": 15,
+      "type": "matching",
+      "prompt": "Dopasuj usługę sieciową do jej zadania.",
+      "pairs": [
+        { "id": "dns", "prompt": "DNS", "answer": "Rozwiązywanie nazw domenowych" },
+        { "id": "dhcp", "prompt": "DHCP", "answer": "Automatyczne przydzielanie konfiguracji IP" },
+        { "id": "https", "prompt": "HTTPS", "answer": "Szyfrowana komunikacja z serwerem WWW" }
+      ],
+      "explanation": "DNS odwzorowuje nazwy na rekordy, DHCP dostarcza hostom konfigurację, a HTTPS chroni komunikację HTTP za pomocą TLS."
+    }
+  ]
+}

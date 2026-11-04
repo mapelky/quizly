@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quizly — trzy prototypy sieci</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+@font-face { font-family: Hanken; src: url('/fonts/hanken-grotesk-latin.woff2') format('woff2'); font-weight:400 600; font-display:swap; }
+@font-face { font-family: Hanken; src: url('/fonts/hanken-grotesk-latin-ext.woff2') format('woff2'); font-weight:400 600; font-display:swap; unicode-range:U+0100-024F; }
+:root { color-scheme:dark; --bg:#08090a; --ink:#e7e9ee; --muted:#999da8; --line:#29292f; }
+:root[data-theme="light"] { color-scheme:light; --bg:#fafafa; --ink:#26272d; --muted:#626673; --line:#dedfe4; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.65 Hanken,sans-serif; }
+main { max-width:1600px; padding:40px clamp(20px,4vw,56px) 48px; margin:auto; }
+header { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:36px; }
+h1 { margin:0 0 8px; font-size:32px; line-height:1.25; font-weight:600; letter-spacing:-.04em; }
+p { margin:0; color:var(--muted); }
+.theme { display:flex; align-items:center; gap:8px; flex-shrink:0; }
+button { min-height:44px; padding:10px 16px; border:1px solid var(--line); border-radius:8px; background:transparent; color:inherit; font:inherit; cursor:pointer; }
+button[aria-pressed="true"] { border-color:var(--ink); }
+button:focus-visible,a:focus-visible { outline:2px solid var(--ink); outline-offset:4px; }
+.prototypes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+article { min-width:0; }
+.heading { display:flex; gap:12px; align-items:baseline; margin-bottom:16px; }
+.number { color:var(--muted); font-size:13px; font-variant-numeric:tabular-nums; }
+h2 { margin:0; font-size:21px; line-height:1.3; font-weight:500; letter-spacing:-.025em; }
+iframe { display:block; width:100%; height:600px; border:1px solid var(--line); border-radius:12px; background:var(--bg); }
+.description { padding:20px 0 12px; font-size:14px; line-height:1.8; }
+a { color:inherit; text-underline-offset:4px; }
+.open { display:inline-flex; align-items:center; min-height:44px; font-size:13px; }
+footer { display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-top:36px; padding-top:24px; border-top:1px solid var(--line); font-size:13px; }
+@media(max-width:1100px) { .prototypes{grid-template-columns:1fr;} article{max-width:680px;width:100%;margin-inline:auto;} iframe{height:740px;} }
+@media(max-width:600px) { header{align-items:flex-start;flex-direction:column;} h1{font-size:27px;} iframe{height:560px;} main{padding-top:28px;} }
+</style>
+</head>
+<body>
+<main>
+<header><div><h1>Trzy prototypy małej sieci.</h1><p>Najedź na urządzenia lub uruchom „play”. Wybierz układ w czacie.</p></div><div class="theme" role="group" aria-label="Tło podglądu"><button type="button" data-mode="dark" aria-pressed="true">Ciemne</button><button type="button" data-mode="light" aria-pressed="false">Jasne</button></div></header>
+<div class="prototypes">
+<article><div class="heading"><span class="number">01</span><h2>Warstwy</h2></div><iframe src="layers.html?theme=dark" title="Prototyp 1 — Warstwy" data-figure="layers"></iframe><p class="description">Chmura nad routerem i switchem. Na dole komputer oraz serwer. Najechanie unosi urządzenie i wyróżnia całą jego trasę do Internetu.</p><a class="open" href="layers.html?theme=dark&play=1" target="_blank" rel="noopener">Otwórz prototyp 1 ↗</a></article>
+<article><div class="heading"><span class="number">02</span><h2>Wyspa LAN</h2></div><iframe src="island.html?theme=dark" title="Prototyp 2 — Wyspa LAN" data-figure="island"></iframe><p class="description">Cztery urządzenia na wspólnej podstawie: komputer, serwer, router i switch. Bez chmury. Wskazane urządzenie lekko unosi się nad podstawą.</p><a class="open" href="island.html?theme=dark&play=1" target="_blank" rel="noopener">Otwórz prototyp 2 ↗</a></article>
+<article><div class="heading"><span class="number">03</span><h2>Szafa sieciowa</h2></div><iframe src="rack.html?theme=dark" title="Prototyp 3 — Szafa sieciowa" data-figure="rack"></iframe><p class="description">Komputer obok otwartej szafy. Router, switch i serwer zajmują osobne półki, chmura pozostaje najwyżej. Wskazany moduł wysuwa się do przodu.</p><a class="open" href="rack.html?theme=dark&play=1" target="_blank" rel="noopener">Otwórz prototyp 3 ↗</a></article>
+</div>
+<footer><p>Wariant 2, po korekcie do czterech urządzeń, jest używany na home.</p><a href="https://hairline.lucasmarkes.com/figures" target="_blank" rel="noopener">Inspiracje Hairline ↗</a></footer>
+</main>
+<script>
+const frames = [...document.querySelectorAll('iframe')];
+let mode = 'dark';
+function matchPage(frame) {
+  const stage = frame.contentDocument?.getElementById('stage');
+  if (!stage || mode !== 'dark') return;
+  for (const [name,color] of Object.entries({ plate:'oklch(12% .005 250)',edge:'oklch(66% .01 250)',mid:'oklch(52% .01 250)',lo:'oklch(39% .01 250)' })) stage.style.setProperty('--hairline-'+name,color);
+}
+frames.forEach(frame=>frame.addEventListener('load',()=>matchPage(frame)));
+document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
+  mode=button.dataset.mode;
+  document.documentElement.dataset.theme=mode;
+  document.querySelectorAll('[data-mode]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  frames.forEach(frame=>{ frame.src=frame.dataset.figure+'.html?theme='+mode; });
+  document.querySelectorAll('.open').forEach((link,i)=>{ link.href=frames[i].dataset.figure+'.html?theme='+mode+'&play=1'; });
+}));
+</script>
+</body>
+</html>

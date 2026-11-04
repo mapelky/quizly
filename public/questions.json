@@ -1,0 +1,2232 @@
+{
+  "version": 1,
+  "description": "Moduły 1–3: Podstawowa łączność i komunikacja sieciowa. Polski przekład 75 pytań z dostarczonego pliku modul1-3.pdf (ITExamAnswers, eksport 04.11.2026). W źródle brak numeru 60. Zadanie 52 odwołuje się do niedołączonego pliku Packet Tracer.",
+  "questions": [
+    {
+      "id": "m1-3-q001",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Podczas rutynowej kontroli technik odkrył, że oprogramowanie zainstalowane na komputerze potajemnie zbiera informacje o stronach internetowych odwiedzanych przez użytkowników. Jaki rodzaj zagrożenia występuje na tym komputerze?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atak DoS"
+        },
+        {
+          "id": "b",
+          "text": "Kradzież tożsamości"
+        },
+        {
+          "id": "c",
+          "text": "Oprogramowanie szpiegujące (spyware)"
+        },
+        {
+          "id": "d",
+          "text": "Atak wykorzystujący lukę zero-day"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.8.1. Spyware to oprogramowanie instalowane na urządzeniu, które zbiera informacje o jego użytkowaniu."
+    },
+    {
+      "id": "m1-3-q002",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się sieć zapewniająca dostawcom, klientom i współpracownikom bezpieczny dostęp do zasobów przedsiębiorstwa?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internet"
+        },
+        {
+          "id": "b",
+          "text": "Intranet"
+        },
+        {
+          "id": "c",
+          "text": "Ekstranet"
+        },
+        {
+          "id": "d",
+          "text": "Extendednet"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.4.4. Internet jest ogólnoświatową siecią połączonych sieci. Intranet to prywatna sieć organizacji przeznaczona dla jej członków i innych uprawnionych osób. Ekstranet udostępnia wybrane zasoby bezpiecznie także dostawcom, klientom i partnerom. Extendednet nie jest nazwą typu sieci."
+    },
+    {
+      "id": "m1-3-q003",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Duża korporacja zmodyfikowała swoją sieć, aby użytkownicy mogli korzystać z jej zasobów za pomocą prywatnych laptopów i smartfonów. Jaki trend sieciowy opisuje ta sytuacja?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przetwarzanie w chmurze"
+        },
+        {
+          "id": "b",
+          "text": "Współpraca online"
+        },
+        {
+          "id": "c",
+          "text": "Korzystanie z własnych urządzeń (BYOD)"
+        },
+        {
+          "id": "d",
+          "text": "Wideokonferencje"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.7.2. BYOD pozwala użytkownikom korzystać z prywatnych urządzeń w sieci firmowej. Wymaga to uwzględnienia bezpieczeństwa oraz zgodności urządzeń z firmowym oprogramowaniem i usługami."
+    },
+    {
+      "id": "m1-3-q004",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Czym jest ISP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organizacją normalizacyjną opracowującą standardy okablowania sieciowego."
+        },
+        {
+          "id": "b",
+          "text": "Protokołem określającym sposób komunikacji komputerów w sieci lokalnej."
+        },
+        {
+          "id": "c",
+          "text": "Organizacją umożliwiającą osobom prywatnym i przedsiębiorstwom dostęp do Internetu."
+        },
+        {
+          "id": "d",
+          "text": "Urządzeniem sieciowym łączącym funkcje kilku różnych urządzeń."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.5.1. ISP (Internet Service Provider) to dostawca usług internetowych, który zapewnia dostęp do Internetu osobom prywatnym i przedsiębiorstwom."
+    },
+    {
+      "id": "m1-3-q005",
+      "moduleId": "1-3",
+      "type": "matching",
+      "prompt": "Dopasuj wymagania niezawodnej sieci do rozwiązań architektonicznych, które je zapewniają. Nie wszystkie odpowiedzi zostaną wykorzystane.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Odporność na awarie",
+          "answer": "Zapewnienie nadmiarowych łączy i urządzeń."
+        },
+        {
+          "id": "p2",
+          "prompt": "Skalowalność",
+          "answer": "Rozbudowa sieci bez pogarszania jakości usług dla obecnych użytkowników."
+        },
+        {
+          "id": "p3",
+          "prompt": "Bezpieczeństwo",
+          "answer": "Ochrona sieci przed nieuprawnionym dostępem."
+        }
+      ],
+      "explanation": "Zagadnienie 1.6.5. Nadmiarowość wspiera odporność na awarie, możliwość rozbudowy wspiera skalowalność, a kontrola dostępu chroni bezpieczeństwo.",
+      "choices": [
+        "Ochrona sieci przed nieuprawnionym dostępem.",
+        "Zapewnienie nadmiarowych łączy i urządzeń.",
+        "Przypisanie określonego priorytetu do rodzaju komunikacji.",
+        "Rozbudowa sieci bez pogarszania jakości usług dla obecnych użytkowników.",
+        "Zapewnienie przesyłania danych strumieniowych przez szybkie łącza."
+      ]
+    },
+    {
+      "id": "m1-3-q006",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Pracownik oddziału przygotowuje ofertę dla klienta. Musi uzyskać dostęp do poufnych informacji o cenach znajdujących się na wewnętrznych serwerach w centrali firmy. Z jakiego typu sieci będzie korzystał?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intranetu"
+        },
+        {
+          "id": "b",
+          "text": "Internetu"
+        },
+        {
+          "id": "c",
+          "text": "Ekstranetu"
+        },
+        {
+          "id": "d",
+          "text": "Sieci lokalnej LAN"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.4.4. Intranet jest prywatnym połączeniem sieci LAN i WAN należących do organizacji. Dostęp do niego mają członkowie organizacji, pracownicy i inne uprawnione osoby."
+    },
+    {
+      "id": "m1-3-q007",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Które stwierdzenie opisuje wykorzystanie technologii powerline do budowy sieci?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do rozbudowy domowej sieci LAN wykorzystuje się nowe „inteligentne” przewody elektryczne."
+        },
+        {
+          "id": "b",
+          "text": "Domową sieć LAN instaluje się bez użycia fizycznego okablowania."
+        },
+        {
+          "id": "c",
+          "text": "Urządzenie łączy się z istniejącą domową siecią LAN za pomocą adaptera i istniejącego gniazdka elektrycznego."
+        },
+        {
+          "id": "d",
+          "text": "Bezprzewodowe punkty dostępowe wykorzystują adaptery powerline do przesyłania danych przez domową sieć LAN."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.7.8. Technologia powerline przesyła dane przez istniejącą instalację elektryczną. Adapter podłączony do gniazdka umożliwia dołączenie urządzenia do sieci LAN. Rozwiązanie może uzupełniać sieć tam, gdzie Wi-Fi jest niedostępne lub ma zbyt mały zasięg."
+    },
+    {
+      "id": "m1-3-q008",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Technik konfiguruje sieć bezprzewodową w przychodni. Przez pomyłkę ustawia ją tak, że pacjenci mogą przeglądać dokumentację medyczną innych pacjentów. Która cecha sieci została naruszona?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Odporność na awarie"
+        },
+        {
+          "id": "b",
+          "text": "Skalowalność"
+        },
+        {
+          "id": "c",
+          "text": "Bezpieczeństwo"
+        },
+        {
+          "id": "d",
+          "text": "Jakość usług (QoS)"
+        },
+        {
+          "id": "e",
+          "text": "Niezawodność"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.1.8. Bezpieczeństwo sieci obejmuje ochronę poufności danych. Udostępnienie dokumentacji medycznej nieuprawnionym osobom narusza tę zasadę."
+    },
+    {
+      "id": "m1-3-q009",
+      "moduleId": "1-3",
+      "type": "matching",
+      "prompt": "Dopasuj każdą cechę do odpowiedniego typu połączenia z Internetem.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Wykorzystuje kabel koncentryczny jako medium.",
+          "answer": "Łącze kablowe"
+        },
+        {
+          "id": "p2",
+          "prompt": "Nie sprawdza się na terenach silnie zalesionych.",
+          "answer": "Łącze satelitarne"
+        },
+        {
+          "id": "p3",
+          "prompt": "Zazwyczaj ma bardzo małą przepustowość.",
+          "answer": "Wdzwaniane łącze telefoniczne (dial-up)"
+        },
+        {
+          "id": "p4",
+          "prompt": "Zapewnia szerokopasmowe połączenie przez linię telefoniczną.",
+          "answer": "DSL"
+        }
+      ],
+      "explanation": "Zagadnienie 1.5.2. DSL zapewnia stały dostęp szerokopasmowy przez linię telefoniczną. Łącze kablowe korzysta z kabla koncentrycznego. Dial-up jest wolny i używa modemu telefonicznego. Łącze satelitarne wymaga odpowiedniej widoczności satelity, dlatego drzewa i przeszkody mogą zakłócać transmisję. Żadna z tych typowych opcji domowych nie jest dedykowanym łączem dzierżawionym T1/E1 lub T3/E3."
+    },
+    {
+      "id": "m1-3-q010",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Które dwa kryteria pomagają wybrać odpowiednie medium transmisyjne dla sieci?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rodzaje danych, które należy traktować priorytetowo."
+        },
+        {
+          "id": "b",
+          "text": "Koszt urządzeń końcowych wykorzystywanych w sieci."
+        },
+        {
+          "id": "c",
+          "text": "Odległość, na jaką wybrane medium może skutecznie przesyłać sygnał."
+        },
+        {
+          "id": "d",
+          "text": "Liczba urządzeń pośredniczących zainstalowanych w sieci."
+        },
+        {
+          "id": "e",
+          "text": "Warunki środowiskowe, w których medium zostanie zainstalowane."
+        }
+      ],
+      "correctOptionIds": [
+        "c",
+        "e"
+      ],
+      "explanation": "Zagadnienie 2.6.2. Przy wyborze medium bierze się pod uwagę zasięg przesyłania sygnału, warunki instalacji, wymaganą ilość i szybkość transmisji danych oraz koszt medium i jego instalacji."
+    },
+    {
+      "id": "m1-3-q011",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Który rodzaj ruchu sieciowego wymaga mechanizmów QoS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poczta elektroniczna"
+        },
+        {
+          "id": "b",
+          "text": "Zakupy online"
+        },
+        {
+          "id": "c",
+          "text": "Wideokonferencje"
+        },
+        {
+          "id": "d",
+          "text": "Serwis wiki"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.6.4. Wideokonferencje wykorzystują dźwięk i obraz w czasie rzeczywistym. Wymagają odpowiedniej przepustowości oraz ograniczenia opóźnień. QoS przydziela takim transmisjom potrzebne zasoby sieciowe."
+    },
+    {
+      "id": "m1-3-q012",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Użytkownik zabezpiecza sieć małego biura. Które dwa działania zapewniają minimalny poziom jej ochrony?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wdrożenie zapory sieciowej."
+        },
+        {
+          "id": "b",
+          "text": "Instalacja sieci bezprzewodowej."
+        },
+        {
+          "id": "c",
+          "text": "Instalacja oprogramowania antywirusowego."
+        },
+        {
+          "id": "d",
+          "text": "Wdrożenie systemu wykrywania włamań (IDS)."
+        },
+        {
+          "id": "e",
+          "text": "Dodanie dedykowanego urządzenia zapobiegania włamaniom (IPS)."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.8.2. Podstawową ochronę małej sieci zapewniają zapora sieciowa oraz oprogramowanie antywirusowe i chroniące przed złośliwym oprogramowaniem. Samo uruchomienie Wi-Fi nie zwiększa bezpieczeństwa. Bardziej złożone systemy IDS i IPS są zwykle spotykane w większych sieciach firmowych."
+    },
+    {
+      "id": "m1-3-q013",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Hasła mogą ograniczać dostęp do całości lub części systemu Cisco IOS. Które trzy tryby lub interfejsy można zabezpieczyć hasłem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Linie VTY"
+        },
+        {
+          "id": "b",
+          "text": "Interfejs konsoli"
+        },
+        {
+          "id": "c",
+          "text": "Interfejs Ethernet"
+        },
+        {
+          "id": "d",
+          "text": "Tryb rozruchu IOS"
+        },
+        {
+          "id": "e",
+          "text": "Uprzywilejowany tryb EXEC"
+        },
+        {
+          "id": "f",
+          "text": "Tryb konfiguracji routera"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "e"
+      ],
+      "explanation": "Zagadnienie 2.4.3. Hasłami można zabezpieczyć linie konsoli i VTY oraz dostęp do uprzywilejowanego trybu EXEC."
+    },
+    {
+      "id": "m1-3-q014",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Który interfejs umożliwia zdalne zarządzanie przełącznikiem warstwy 2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interfejs AUX"
+        },
+        {
+          "id": "b",
+          "text": "Interfejs portu konsoli"
+        },
+        {
+          "id": "c",
+          "text": "Wirtualny interfejs przełącznika (SVI)"
+        },
+        {
+          "id": "d",
+          "text": "Pierwszy interfejs portu Ethernet"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 2.6.2. Wirtualny interfejs przełącznika (SVI) umożliwia przypisanie adresu IP do zarządzania przełącznikiem przez sieć."
+    },
+    {
+      "id": "m1-3-q015",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jaką funkcję pełni klawisz Tab podczas wpisywania polecenia w IOS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przerywa polecenie i wraca do trybu konfiguracji."
+        },
+        {
+          "id": "b",
+          "text": "Opuszcza tryb konfiguracji i wraca do trybu EXEC użytkownika."
+        },
+        {
+          "id": "c",
+          "text": "Przenosi kursor na początek następnego wiersza."
+        },
+        {
+          "id": "d",
+          "text": "Uzupełnia pozostałą część częściowo wpisanego słowa w poleceniu."
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 2.3.5. Naciśnięcie Tab uzupełnia częściowo wpisane polecenie lub słowo kluczowe, jeżeli wpisany fragment pozwala je jednoznacznie rozpoznać."
+    },
+    {
+      "id": "m1-3-q016",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Podczas rozwiązywania problemu technik wprowadził wiele zmian w bieżącej konfiguracji routera. Zmiany nie rozwiązały problemu i nie zostały zapisane. Jak odrzucić je i ponownie użyć konfiguracji zapisanej w NVRAM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wydać polecenie reload bez zapisywania konfiguracji bieżącej."
+        },
+        {
+          "id": "b",
+          "text": "Usunąć plik vlan.dat i ponownie uruchomić urządzenie."
+        },
+        {
+          "id": "c",
+          "text": "Zamknąć i ponownie otworzyć emulator terminala."
+        },
+        {
+          "id": "d",
+          "text": "Wydać polecenie copy startup-config running-config."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 2.5.2. Ponowne uruchomienie urządzenia bez zapisu zmian powoduje wczytanie konfiguracji startowej z NVRAM. Polecenie copy startup-config running-config scala konfigurację startową z bieżącą, zamiast całkowicie zastąpić bieżącą konfigurację."
+    },
+    {
+      "id": "m1-3-q017",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Administrator po wydaniu polecenia ping na przełączniku naciska Ctrl-Shift-6. W jakim celu używa tego skrótu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aby ponownie uruchomić proces ping."
+        },
+        {
+          "id": "b",
+          "text": "Aby przerwać proces ping."
+        },
+        {
+          "id": "c",
+          "text": "Aby przejść do innego trybu konfiguracji."
+        },
+        {
+          "id": "d",
+          "text": "Aby dokończyć wpisywanie polecenia."
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 2.3.5. Ctrl-Shift-6 przerywa proces IOS, na przykład ping lub traceroute. Tab uzupełnia polecenie, Ctrl-Z wraca z konfiguracji do uprzywilejowanego trybu EXEC, a Ctrl-R ponownie wyświetla wpisywany wiersz."
+    },
+    {
+      "id": "m1-3-q018",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Na podstawie przedstawionej konfiguracji określ wymagane hasło. Administrator łączy się z przełącznikiem SW1 przez port konsoli. Które hasło umożliwia dostęp do trybu EXEC użytkownika?",
+      "options": [
+        {
+          "id": "a",
+          "text": "letmein"
+        },
+        {
+          "id": "b",
+          "text": "secretin"
+        },
+        {
+          "id": "c",
+          "text": "lineconin"
+        },
+        {
+          "id": "d",
+          "text": "linevtyin"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 2.4.3. Hasło ustawione w sekcji line console 0 chroni dostęp przez konsolę, dlatego poprawną odpowiedzią jest lineconin. Hasło linii VTY dotyczy dostępu zdalnego, a enable password i enable secret chronią uprzywilejowany tryb EXEC.",
+      "image": {
+        "src": "/images/moduly-1-3/pytanie-18.png",
+        "alt": "Konfiguracja SW1: enable password letmein; enable secret secretin; line console 0; password lineconin; login; exit; line vty 0 15; password linevtyin; login; end."
+      }
+    },
+    {
+      "id": "m1-3-q019",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Technik konfiguruje przełącznik następującymi poleceniami:\n\nSwitchA(config)# interface vlan 1\nSwitchA(config-if)# ip address 192.168.1.1 255.255.255.0\nSwitchA(config-if)# no shutdown\n\nCo konfiguruje technik?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dostęp przez Telnet"
+        },
+        {
+          "id": "b",
+          "text": "Wirtualny interfejs przełącznika (SVI)"
+        },
+        {
+          "id": "c",
+          "text": "Szyfrowanie haseł"
+        },
+        {
+          "id": "d",
+          "text": "Dostęp do fizycznego portu przełącznika"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 2.7.4. Adres IP przypisuje się do wirtualnego interfejsu przełącznika, aby umożliwić jego zdalne zarządzanie."
+    },
+    {
+      "id": "m1-3-q020",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Które polecenie lub skrót klawiaturowy umożliwia powrót o jeden poziom wyżej w hierarchii poleceń?",
+      "options": [
+        {
+          "id": "a",
+          "text": "end"
+        },
+        {
+          "id": "b",
+          "text": "exit"
+        },
+        {
+          "id": "c",
+          "text": "Ctrl-Z"
+        },
+        {
+          "id": "d",
+          "text": "Ctrl-C"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 2.2.4. Polecenie exit wraca o jeden poziom wyżej. Polecenie end i skrót Ctrl-Z wracają do uprzywilejowanego trybu EXEC, a Ctrl-C przerywa wykonywaną operację lub wpisywanie polecenia."
+    },
+    {
+      "id": "m1-3-q021",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Które dwie cechy dotyczą pamięci RAM w urządzeniu Cisco?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAM zapewnia pamięć nieulotną."
+        },
+        {
+          "id": "b",
+          "text": "Bieżąca, aktywnie używana konfiguracja urządzenia jest przechowywana w RAM."
+        },
+        {
+          "id": "c",
+          "text": "Zawartość RAM jest tracona po wyłączeniu zasilania i ponownym uruchomieniu."
+        },
+        {
+          "id": "d",
+          "text": "RAM występuje w przełącznikach Cisco, ale nie w routerach Cisco."
+        },
+        {
+          "id": "e",
+          "text": "RAM może przechowywać wiele wersji IOS i plików konfiguracyjnych."
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "c"
+      ],
+      "explanation": "Zagadnienie 2.5.1. RAM przechowuje dane potrzebne do pracy urządzenia, w tym running-config. Jest pamięcią ulotną, więc traci zawartość po zaniku zasilania. Obraz IOS jest przechowywany w pamięci flash, która zachowuje zawartość bez zasilania."
+    },
+    {
+      "id": "m1-3-q022",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Które dwie nazwy hostów są zgodne z zasadami nazewnictwa urządzeń Cisco IOS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Branch2!"
+        },
+        {
+          "id": "b",
+          "text": "RM-3-Switch-2A4"
+        },
+        {
+          "id": "c",
+          "text": "Floor(15)"
+        },
+        {
+          "id": "d",
+          "text": "HO Floor 17"
+        },
+        {
+          "id": "e",
+          "text": "SwBranch799"
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "e"
+      ],
+      "explanation": "Zagadnienie 2.4.1. Nazwa powinna zaczynać się literą, nie zawierać spacji, kończyć się literą lub cyfrą i składać się wyłącznie z liter, cyfr oraz myślników. Według materiału źródłowego musi mieć mniej niż 64 znaki."
+    },
+    {
+      "id": "m1-3-q023",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Czym SSH różni się od Telnetu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSH zestawia połączenia przez sieć, natomiast Telnet służy do dostępu poza pasmem."
+        },
+        {
+          "id": "b",
+          "text": "SSH zabezpiecza sesje zdalne przez szyfrowanie komunikacji i uwierzytelnianie użytkowników. Telnet przesyła dane jawnym tekstem i jest uznawany za niebezpieczny."
+        },
+        {
+          "id": "c",
+          "text": "SSH wymaga emulatora terminala PuTTY, natomiast do połączeń Telnet trzeba używać Tera Term."
+        },
+        {
+          "id": "d",
+          "text": "SSH wymaga aktywnego połączenia sieciowego, natomiast Telnet łączy się z urządzeniem przez port konsoli."
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 2.1.4. SSH jest preferowany do zdalnego dostępu, ponieważ szyfruje sesję. SSH i Telnet korzystają z sieci, czyli z dostępu w paśmie. PuTTY i Tera Term mogą obsługiwać oba protokoły."
+    },
+    {
+      "id": "m1-3-q024",
+      "moduleId": "1-3",
+      "type": "matching",
+      "prompt": "Administrator zabezpiecza port konsoli przełącznika hasłem. Ustal kolejność przechodzenia przez tryby IOS, aby dojść do trybu wprowadzania konfiguracji konsoli.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Pierwszy tryb",
+          "answer": "Tryb EXEC użytkownika"
+        },
+        {
+          "id": "p2",
+          "prompt": "Drugi tryb",
+          "answer": "Uprzywilejowany tryb EXEC"
+        },
+        {
+          "id": "p3",
+          "prompt": "Trzeci tryb",
+          "answer": "Tryb konfiguracji globalnej"
+        },
+        {
+          "id": "p4",
+          "prompt": "Ostatni tryb",
+          "answer": "Tryb konfiguracji linii"
+        }
+      ],
+      "explanation": "Zagadnienie 2.2.4. Po wejściu do CLI użytkownik zaczyna w trybie EXEC użytkownika. Polecenie enable przenosi do uprzywilejowanego trybu EXEC, configure terminal do konfiguracji globalnej, a line console 0 do konfiguracji linii konsoli."
+    },
+    {
+      "id": "m1-3-q025",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Które trzy cechy opisują wirtualny interfejs przełącznika (SVI)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jest protokołem bezpieczeństwa przeznaczonym do ochrony portów przełącznika."
+        },
+        {
+          "id": "b",
+          "text": "Nie jest powiązany z żadnym fizycznym interfejsem przełącznika."
+        },
+        {
+          "id": "c",
+          "text": "Jest specjalnym interfejsem umożliwiającym łączność przez różne typy mediów."
+        },
+        {
+          "id": "d",
+          "text": "Jest wymagany, aby dowolne urządzenie mogło uzyskać łączność z dowolnej lokalizacji."
+        },
+        {
+          "id": "e",
+          "text": "Umożliwia zdalne zarządzanie przełącznikiem."
+        },
+        {
+          "id": "f",
+          "text": "Domyślnie jest związany z VLAN 1."
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "e",
+        "f"
+      ],
+      "explanation": "Zagadnienie 2.6.2. SVI jest tworzony programowo i nie stanowi pojedynczego portu fizycznego. Umożliwia zarządzanie przełącznikiem przez IP. Domyślnie w konfiguracji przełącznika występuje interfejs VLAN 1."
+    },
+    {
+      "id": "m1-3-q026",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Które polecenie wyświetla skrócony stan interfejsów przełącznika, w tym ich stan działania i skonfigurowane adresy IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ipconfig"
+        },
+        {
+          "id": "b",
+          "text": "ping"
+        },
+        {
+          "id": "c",
+          "text": "traceroute"
+        },
+        {
+          "id": "d",
+          "text": "show ip interface brief"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 2.8.1. show ip interface brief wyświetla skrócone informacje o interfejsach urządzenia. ipconfig sprawdza konfigurację TCP/IP hosta, ping weryfikuje łączność warstwy 3, a traceroute pokazuje trasę od źródła do celu."
+    },
+    {
+      "id": "m1-3-q027",
+      "moduleId": "1-3",
+      "type": "matching",
+      "prompt": "Dopasuj opisy do odpowiednich trybów IOS. Ten sam tryb może pasować do więcej niż jednego opisu.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Zmiany wpływają na działanie całego urządzenia.",
+          "answer": "Tryb konfiguracji globalnej"
+        },
+        {
+          "id": "p2",
+          "prompt": "Dostęp uzyskuje się poleceniem enable.",
+          "answer": "Uprzywilejowany tryb EXEC"
+        },
+        {
+          "id": "p3",
+          "prompt": "Znak zachęty kończy się znakiem #.",
+          "answer": "Uprzywilejowany tryb EXEC"
+        },
+        {
+          "id": "p4",
+          "prompt": "Dostępny jest ograniczony zestaw podstawowych poleceń monitorujących.",
+          "answer": "Tryb EXEC użytkownika"
+        },
+        {
+          "id": "p5",
+          "prompt": "Dostęp uzyskuje się poleceniem configure terminal.",
+          "answer": "Tryb konfiguracji globalnej"
+        },
+        {
+          "id": "p6",
+          "prompt": "Jest pierwszym trybem po wejściu do CLI urządzenia IOS.",
+          "answer": "Tryb EXEC użytkownika"
+        }
+      ],
+      "explanation": "Zagadnienie 2.2.4. W źródle niewykorzystany opis brzmi: „Używany do ustawienia hasła dla linii VTY”. Dotyczy on konfiguracji linii, a nie żadnego z trzech trybów dopasowywanych w tym zadaniu. Znak # w tym porównaniu wskazuje uprzywilejowany EXEC; w konfiguracji globalnej znak zachęty zawiera także (config)."
+    },
+    {
+      "id": "m1-3-q028",
+      "moduleId": "1-3",
+      "type": "matching",
+      "prompt": "Dopasuj funkcje do odpowiednich klawiszy i skrótów CLI.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Wyświetla pomoc kontekstową.",
+          "answer": "?"
+        },
+        {
+          "id": "p2",
+          "prompt": "Wyświetla następny ekran wyników.",
+          "answer": "Spacja"
+        },
+        {
+          "id": "p3",
+          "prompt": "Uzupełnia skrócone polecenia i parametry.",
+          "answer": "Tab"
+        },
+        {
+          "id": "p4",
+          "prompt": "Przegląda wcześniej wprowadzone polecenia wstecz.",
+          "answer": "Strzałka w górę"
+        },
+        {
+          "id": "p5",
+          "prompt": "Przerywa polecenia takie jak traceroute i ping.",
+          "answer": "Ctrl-Shift-6"
+        }
+      ],
+      "explanation": "Zagadnienie 2.3.5. Tab uzupełnia polecenie lub słowo kluczowe, spacja wyświetla kolejny ekran, ? uruchamia pomoc kontekstową, strzałka w górę przegląda historię, a Ctrl-Shift-6 przerywa proces IOS. Ctrl-C anuluje wpisywane polecenie i może przywrócić uprzywilejowany tryb EXEC."
+    },
+    {
+      "id": "m1-3-q029",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Którą część składni polecenia show running-config stanowi running-config?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Polecenie"
+        },
+        {
+          "id": "b",
+          "text": "Słowo kluczowe"
+        },
+        {
+          "id": "c",
+          "text": "Zmienną"
+        },
+        {
+          "id": "d",
+          "text": "Znak zachęty"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 2.3.1. show jest poleceniem, a running-config słowem kluczowym określającym, jakie informacje należy wyświetlić."
+    },
+    {
+      "id": "m1-3-q030",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Po zmianie konfiguracji przełącznika Cisco administrator wydaje polecenie copy running-config startup-config. Jaki jest jego skutek?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nowa konfiguracja zostanie zapisana w pamięci flash."
+        },
+        {
+          "id": "b",
+          "text": "Nowa konfiguracja zostanie wczytana po ponownym uruchomieniu przełącznika."
+        },
+        {
+          "id": "c",
+          "text": "Bieżący plik IOS zostanie zastąpiony nowo skonfigurowanym plikiem."
+        },
+        {
+          "id": "d",
+          "text": "Zmiany konfiguracji zostaną usunięte i zostanie przywrócona pierwotna konfiguracja."
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 2.5.2. Polecenie zastępuje konfigurację startową w NVRAM zawartością konfiguracji bieżącej. Zapisana konfiguracja zostanie wczytana podczas ponownego uruchomienia urządzenia."
+    },
+    {
+      "id": "m1-3-q031",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Które polecenie zapobiega wyświetlaniu wszystkich dotychczas niezaszyfrowanych haseł jawnym tekstem w pliku konfiguracyjnym?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(config)# enable password secret"
+        },
+        {
+          "id": "b",
+          "text": "(config)# enable secret Secret_Password"
+        },
+        {
+          "id": "c",
+          "text": "(config-line)# password secret"
+        },
+        {
+          "id": "d",
+          "text": "(config)# service password-encryption"
+        },
+        {
+          "id": "e",
+          "text": "(config)# enable secret Encrypted_Password"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 2.4.4. Polecenie service password-encryption ukrywa w konfiguracji hasła zapisane dotąd jawnym tekstem."
+    },
+    {
+      "id": "m1-3-q032",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Administrator wydaje polecenie service password-encryption w trybie konfiguracji routera. Co ono powoduje?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Szyfruje hasła podczas ich przesyłania przez szeregowe łącza WAN."
+        },
+        {
+          "id": "b",
+          "text": "Zapobiega odczytaniu haseł konfiguracji bieżącej w postaci jawnej."
+        },
+        {
+          "id": "c",
+          "text": "Włącza silny algorytm szyfrowania dla polecenia enable secret password."
+        },
+        {
+          "id": "d",
+          "text": "Automatycznie szyfruje hasła w plikach konfiguracyjnych już zapisanych w NVRAM."
+        },
+        {
+          "id": "e",
+          "text": "Tworzy odrębne zaszyfrowane hasło dla zewnętrznego personelu serwisującego router."
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 2.4.4. service password-encryption przekształca hasła zapisane jawnym tekstem w konfiguracji bieżącej w postać nieczytelną bezpośrednio. Aby zachować zmianę w konfiguracji startowej, należy zapisać running-config do startup-config. Polecenie nie szyfruje ruchu sieciowego."
+    },
+    {
+      "id": "m1-3-q033",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jaki mechanizm mogą stosować dwa komputery, aby pakiety nie były odrzucane z powodu zbyt szybkiego przesyłania zbyt dużej ilości danych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enkapsulację"
+        },
+        {
+          "id": "b",
+          "text": "Kontrolę przepływu"
+        },
+        {
+          "id": "c",
+          "text": "Metodę dostępu do medium"
+        },
+        {
+          "id": "d",
+          "text": "Limit czasu oczekiwania na odpowiedź"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 3.1.9. Kontrola przepływu dostosowuje tempo transmisji tak, aby odbiorca mógł poprawnie przyjmować dane. Nadawca nie powinien wysyłać ich szybciej, niż odbiorca jest w stanie przetworzyć."
+    },
+    {
+      "id": "m1-3-q034",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Które stwierdzenie poprawnie opisuje enkapsulację TCP/IP podczas wysyłania danych z komputera do sieci?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dane są przekazywane z warstwy internetowej do warstwy dostępu do sieci."
+        },
+        {
+          "id": "b",
+          "text": "Pakiety są przekazywane z warstwy dostępu do sieci do warstwy transportowej."
+        },
+        {
+          "id": "c",
+          "text": "Segmenty są przekazywane z warstwy transportowej do warstwy internetowej."
+        },
+        {
+          "id": "d",
+          "text": "Ramki są przekazywane z warstwy dostępu do sieci do warstwy internetowej."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 3.6.4. Warstwa transportowa przekazuje segmenty warstwie internetowej. Ta tworzy pakiety i przekazuje je warstwie dostępu do sieci, gdzie powstają ramki, a następnie bity przesyłane przez medium."
+    },
+    {
+      "id": "m1-3-q035",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Które trzy protokoły warstwy aplikacji należą do zestawu TCP/IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ARP"
+        },
+        {
+          "id": "b",
+          "text": "DHCP"
+        },
+        {
+          "id": "c",
+          "text": "DNS"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        },
+        {
+          "id": "e",
+          "text": "NAT"
+        },
+        {
+          "id": "f",
+          "text": "PPP"
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Zagadnienie 3.3.4. DHCP, DNS i FTP są protokołami warstwy aplikacji. ARP i PPP są związane z warstwą dostępu do sieci. NAT dotyczy translacji adresów w warstwie internetowej; jest mechanizmem, a nie odrębnym protokołem aplikacyjnym."
+    },
+    {
+      "id": "m1-3-q036",
+      "moduleId": "1-3",
+      "type": "matching",
+      "prompt": "Dopasuj opisy do odpowiednich organizacji. Nie wszystkie odpowiedzi zostaną wykorzystane.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Nadzoruje i koordynuje przydzielanie adresów IP, zarządzanie nazwami domenowymi oraz identyfikatory protokołów.",
+          "answer": "IANA"
+        },
+        {
+          "id": "p2",
+          "prompt": "Jest największym twórcą międzynarodowych standardów obejmujących wiele produktów i usług; jest znana z modelu odniesienia OSI.",
+          "answer": "ISO"
+        },
+        {
+          "id": "p3",
+          "prompt": "Promuje otwarty rozwój, ewolucję i wykorzystanie Internetu na całym świecie.",
+          "answer": "ISOC"
+        }
+      ],
+      "explanation": "Zagadnienia 3.3.2 i 3.4.2. Niewykorzystaną organizacją jest EIA, znana ze standardów dotyczących okablowania elektrycznego, złączy i szaf 19-calowych przeznaczonych do montażu sprzętu sieciowego.",
+      "choices": [
+        "ISOC",
+        "ISO",
+        "EIA",
+        "IANA"
+      ]
+    },
+    {
+      "id": "m1-3-q037",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się jednostka danych protokołu (PDU) warstwy transportowej?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bity"
+        },
+        {
+          "id": "b",
+          "text": "Dane"
+        },
+        {
+          "id": "c",
+          "text": "Ramka"
+        },
+        {
+          "id": "d",
+          "text": "Pakiet"
+        },
+        {
+          "id": "e",
+          "text": "Segment"
+        }
+      ],
+      "correctOptionIds": [
+        "e"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Nazwy PDU zmieniają się zależnie od warstwy: dane w warstwie aplikacji, segment w warstwie transportowej, pakiet w warstwie sieciowej, ramka w warstwie łącza danych i bity w warstwie fizycznej."
+    },
+    {
+      "id": "m1-3-q038",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Podczas ręcznego konfigurowania IPv4 na serwerze WWW który parametr określa część sieciową i część hosta adresu IPv4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adres serwera DNS"
+        },
+        {
+          "id": "b",
+          "text": "Maska podsieci"
+        },
+        {
+          "id": "c",
+          "text": "Brama domyślna"
+        },
+        {
+          "id": "d",
+          "text": "Adres serwera DHCP"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 3.7.2. Maska podsieci wyznacza część sieciową i część hosta adresu IPv4. Adres IPv4 identyfikuje urządzenie, brama domyślna umożliwia komunikację z innymi sieciami, a adres serwera DNS wskazuje usługę rozwiązywania nazw. Przy konfiguracji ręcznej nie podaje się adresu serwera DHCP."
+    },
+    {
+      "id": "m1-3-q039",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się proces umieszczania jednej jednostki PDU wewnątrz innej jednostki PDU?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enkapsulacja"
+        },
+        {
+          "id": "b",
+          "text": "Kodowanie"
+        },
+        {
+          "id": "c",
+          "text": "Segmentacja"
+        },
+        {
+          "id": "d",
+          "text": "Kontrola przepływu"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Enkapsulacja polega na umieszczeniu PDU wyższej warstwy w polu danych PDU warstwy niższej."
+    },
+    {
+      "id": "m1-3-q040",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Która warstwa modelu TCP/IP odpowiada za trasowanie wiadomości między sieciami?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internetowa"
+        },
+        {
+          "id": "b",
+          "text": "Transportowa"
+        },
+        {
+          "id": "c",
+          "text": "Dostępu do sieci"
+        },
+        {
+          "id": "d",
+          "text": "Sesji"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.5.4. Model TCP/IP obejmuje warstwy aplikacji, transportową, internetową i dostępu do sieci. Za trasowanie odpowiada warstwa internetowa. Warstwa sesji należy do modelu OSI, a nie do czterowarstwowego modelu TCP/IP."
+    },
+    {
+      "id": "m1-3-q041",
+      "moduleId": "1-3",
+      "type": "matching",
+      "prompt": "Ustal prawidłową kolejność zdarzeń w stosie TCP/IP podczas przygotowywania wiadomości Telnet do wysłania przez sieć.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Dane w formacie Telnet są przekazywane do następnej warstwy.",
+          "answer": "Pierwsze zdarzenie"
+        },
+        {
+          "id": "p2",
+          "prompt": "Dodawany jest nagłówek TCP.",
+          "answer": "Drugie zdarzenie"
+        },
+        {
+          "id": "p3",
+          "prompt": "Dodawany jest nagłówek IP.",
+          "answer": "Trzecie zdarzenie"
+        },
+        {
+          "id": "p4",
+          "prompt": "Dodawany jest nagłówek Ethernet.",
+          "answer": "Czwarte zdarzenie"
+        }
+      ],
+      "explanation": "Zagadnienie 3.3.5. Kolejność enkapsulacji: dane Telnet, nagłówek TCP, nagłówek IP, nagłówek Ethernet."
+    },
+    {
+      "id": "m1-3-q042",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W jaką jednostkę PDU są składane bity odebrane z medium sieciowego przez kartę sieciową hosta?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plik"
+        },
+        {
+          "id": "b",
+          "text": "Ramkę"
+        },
+        {
+          "id": "c",
+          "text": "Pakiet"
+        },
+        {
+          "id": "d",
+          "text": "Segment"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Odebrane bity są interpretowane jako ramka w warstwie łącza danych. Pakiet należy do warstwy sieciowej, a segment do warstwy transportowej. Plik jest strukturą danych używaną przez aplikacje."
+    },
+    {
+      "id": "m1-3-q043",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Na podstawie schematu wskaż dwa poprawne stwierdzenia dotyczące adresowania. ServerB próbuje nawiązać kontakt z HostA. Jakie adresy docelowe umieści w tworzonym pakiecie i ramce?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ServerB utworzy pakiet z docelowym adresem IP RouterB."
+        },
+        {
+          "id": "b",
+          "text": "ServerB utworzy ramkę z docelowym adresem MAC SwitchB."
+        },
+        {
+          "id": "c",
+          "text": "ServerB utworzy pakiet z docelowym adresem IP RouterA."
+        },
+        {
+          "id": "d",
+          "text": "ServerB utworzy ramkę z docelowym adresem MAC RouterB."
+        },
+        {
+          "id": "e",
+          "text": "ServerB utworzy pakiet z docelowym adresem IP HostA."
+        },
+        {
+          "id": "f",
+          "text": "ServerB utworzy ramkę z docelowym adresem MAC RouterA."
+        }
+      ],
+      "correctOptionIds": [
+        "d",
+        "e"
+      ],
+      "explanation": "Zagadnienie 3.7.2. Pakiet jest adresowany do końcowego odbiorcy w zdalnej sieci, czyli HostA. Ramka w lokalnym segmencie jest adresowana do bramy domyślnej serwera, czyli RouterB.",
+      "image": {
+        "src": "/images/moduly-1-3/pytanie-43.png",
+        "alt": "RouterA i RouterB łączą dwie sieci. HostA łączy się z RouterA przez SwitchA, a ServerB z RouterB przez SwitchB."
+      }
+    },
+    {
+      "id": "m1-3-q044",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jaki mechanizm pozwala komputerowi odpowiednio zareagować, gdy wysłał żądanie danych do serwera, a serwer zbyt długo nie odpowiada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enkapsulacja"
+        },
+        {
+          "id": "b",
+          "text": "Kontrola przepływu"
+        },
+        {
+          "id": "c",
+          "text": "Metoda dostępu do medium"
+        },
+        {
+          "id": "d",
+          "text": "Limit czasu oczekiwania na odpowiedź"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 3.1.9. Jeśli odpowiedź nie nadejdzie w dopuszczalnym czasie, komputer zakłada przekroczenie czasu oczekiwania i podejmuje odpowiednie działanie."
+    },
+    {
+      "id": "m1-3-q045",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Klient WWW odbiera odpowiedź serwera zawierającą stronę internetową. W jakiej kolejności, z perspektywy klienta, protokoły są używane do dekodowania odebranej transmisji?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ethernet, IP, TCP, HTTP"
+        },
+        {
+          "id": "b",
+          "text": "HTTP, TCP, IP, Ethernet"
+        },
+        {
+          "id": "c",
+          "text": "Ethernet, TCP, IP, HTTP"
+        },
+        {
+          "id": "d",
+          "text": "HTTP, Ethernet, IP, TCP"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Przy odbieraniu danych klient przetwarza kolejno ramkę Ethernet, pakiet IP, segment TCP i dane HTTP. HTTP określa wymianę między serwerem WWW a klientem, TCP obsługuje rozmowę aplikacji, IP dostarcza pakiety do celu, a Ethernet zapewnia transmisję ramek w lokalnej sieci."
+    },
+    {
+      "id": "m1-3-q046",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Które dwie warstwy modelu OSI łącznie realizują funkcje jednej warstwy modelu TCP/IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "b",
+          "text": "Sieciowa"
+        },
+        {
+          "id": "c",
+          "text": "Fizyczna"
+        },
+        {
+          "id": "d",
+          "text": "Sesji"
+        },
+        {
+          "id": "e",
+          "text": "Transportowa"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "c"
+      ],
+      "explanation": "Zagadnienie 3.5.4. Warstwy fizyczna i łącza danych modelu OSI odpowiadają warstwie dostępu do sieci modelu TCP/IP. Warstwa sieciowa OSI odpowiada warstwie internetowej TCP/IP, a warstwy sesji, prezentacji i aplikacji OSI łącznie odpowiadają warstwie aplikacji TCP/IP."
+    },
+    {
+      "id": "m1-3-q047",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji dodawany jest adres logiczny?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizycznej"
+        },
+        {
+          "id": "b",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "c",
+          "text": "Sieciowej"
+        },
+        {
+          "id": "d",
+          "text": "Transportowej"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 3.7.2. Adresy logiczne, czyli adresy IP, są dodawane w warstwie sieciowej. Adresy fizyczne MAC należą do warstwy łącza danych, numery portów do warstwy transportowej, a warstwa fizyczna nie dodaje adresów."
+    },
+    {
+      "id": "m1-3-q048",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Która cecha opisuje wiadomości multicast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Są wysyłane do wybranej grupy hostów."
+        },
+        {
+          "id": "b",
+          "text": "Są wysyłane do wszystkich hostów w sieci."
+        },
+        {
+          "id": "c",
+          "text": "Muszą być potwierdzane."
+        },
+        {
+          "id": "d",
+          "text": "Są wysyłane do pojedynczego odbiorcy."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.1.9. Multicast oznacza komunikację jeden-do-wielu skierowaną do określonej grupy odbiorców."
+    },
+    {
+      "id": "m1-3-q049",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Które stwierdzenie o protokołach sieciowych jest poprawne?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Określają rodzaj sprzętu sieciowego i sposób jego montażu w szafach."
+        },
+        {
+          "id": "b",
+          "text": "Określają zasady wymiany wiadomości między źródłem a odbiorcą."
+        },
+        {
+          "id": "c",
+          "text": "Wszystkie działają w warstwie dostępu do sieci modelu TCP/IP."
+        },
+        {
+          "id": "d",
+          "text": "Są wymagane wyłącznie do wymiany wiadomości między urządzeniami w odległych sieciach."
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 3.1.7. Protokoły mogą być realizowane sprzętowo, programowo lub na oba sposoby. Współdziałają w różnych warstwach stosu i określają wymianę danych zarówno w sieciach lokalnych, jak i między sieciami. Nie określają sposobu montażu urządzeń."
+    },
+    {
+      "id": "m1-3-q050",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jaka jest zaleta stosowania przez urządzenia sieciowe protokołów opartych na otwartych standardach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Komunikacja jest ograniczona do urządzeń jednego producenta."
+        },
+        {
+          "id": "b",
+          "text": "Host klienta i serwer korzystający z innego systemu operacyjnego mogą skutecznie wymieniać dane."
+        },
+        {
+          "id": "c",
+          "text": "Dostęp do Internetu może kontrolować jeden dostawca ISP na każdym rynku."
+        },
+        {
+          "id": "d",
+          "text": "Konkurencja i innowacje ograniczają się do określonych typów produktów."
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 3.4.1. Otwarte standardy, takie jak TCP/IP, pozwalają współpracować klientom i serwerom z różnymi systemami operacyjnymi. Sprzyjają zgodności, konkurencji i innowacjom oraz ograniczają uzależnienie od jednego dostawcy."
+    },
+    {
+      "id": "m1-3-q051",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Które urządzenie określa trasę, jaką wiadomości powinny pokonać między sieciami?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Router"
+        },
+        {
+          "id": "b",
+          "text": "Zapora sieciowa"
+        },
+        {
+          "id": "c",
+          "text": "Serwer WWW"
+        },
+        {
+          "id": "d",
+          "text": "Modem DSL"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.2.4. Router wybiera trasę przesyłania pakietów. Zapora filtruje ruch, a modem DSL umożliwia połączenie z Internetem przez odpowiednie łącze dostępowe."
+    },
+    {
+      "id": "m1-3-q052",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Otwórz ćwiczenie Packet Tracer i wykonaj zadania z jego instrukcji. Jaki adres IP ma wirtualny interfejs przełącznika (SVI) na Switch0?\n\nUwaga: załączony PDF nie zawiera pliku ćwiczenia .pka/.pkt. Bez niego nie da się samodzielnie odczytać tej konfiguracji; zachowano pytanie i klucz odpowiedzi z PDF.",
+      "options": [
+        {
+          "id": "a",
+          "text": "192.168.5.10"
+        },
+        {
+          "id": "b",
+          "text": "192.168.10.5"
+        },
+        {
+          "id": "c",
+          "text": "192.168.10.1"
+        },
+        {
+          "id": "d",
+          "text": "192.168.5.0"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 2.7.4. W materiale źródłowym wskazano adres 192.168.5.10. Po wejściu poleceniem enable do uprzywilejowanego trybu EXEC adres SVI można sprawdzić przez show running-config lub show ip interface brief. Plik ćwiczenia Packet Tracer nie został dołączony do PDF.",
+      "image": {
+        "src": "/images/moduly-1-3/pytanie-52.png",
+        "alt": "Komputer PC8 połączony kablem konsolowym z przełącznikiem Switch0."
+      }
+    },
+    {
+      "id": "m1-3-q053",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Dlaczego przełącznik warstwy 2 może potrzebować adresu IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aby wysyłać ramki rozgłoszeniowe do podłączonych komputerów."
+        },
+        {
+          "id": "b",
+          "text": "Aby działać jako brama domyślna."
+        },
+        {
+          "id": "c",
+          "text": "Aby umożliwić zdalne zarządzanie przełącznikiem."
+        },
+        {
+          "id": "d",
+          "text": "Aby odbierać ramki od podłączonych komputerów."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 2.6.2. Do samego przełączania ramek adres IP nie jest potrzebny. Jest wymagany do zarządzania przełącznikiem przez sieć i przypisuje się go do interfejsu wirtualnego, a nie do fizycznego portu warstwy 2. Funkcję bramy domyślnej pełni router."
+    },
+    {
+      "id": "m1-3-q054",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Administrator próbuje skonfigurować przełącznik, ale otrzymuje błąd widoczny na ilustracji. Jaka jest przyczyna?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Należy wpisać pełną wersję polecenia configure terminal."
+        },
+        {
+          "id": "b",
+          "text": "Administrator jest już w trybie konfiguracji globalnej."
+        },
+        {
+          "id": "c",
+          "text": "Przed wydaniem tego polecenia administrator musi wejść do uprzywilejowanego trybu EXEC."
+        },
+        {
+          "id": "d",
+          "text": "Aby wejść do konfiguracji globalnej, administrator musi połączyć się przez port konsoli."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 2.2.1. Znak > po nazwie urządzenia wskazuje tryb EXEC użytkownika. Najpierw należy wydać enable, a dopiero w uprzywilejowanym trybie EXEC użyć configure terminal lub skrótu config t.",
+      "image": {
+        "src": "/images/moduly-1-3/pytanie-54.png",
+        "alt": "Terminal Switch1> z poleceniem config t i błędem Invalid input detected at ^ marker."
+      }
+    },
+    {
+      "id": "m1-3-q055",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się sieć należąca do jednej organizacji, która zapewnia bezpieczny dostęp osobom pracującym dla innej organizacji?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ekstranet"
+        },
+        {
+          "id": "b",
+          "text": "Chmura"
+        },
+        {
+          "id": "c",
+          "text": "BYOD"
+        },
+        {
+          "id": "d",
+          "text": "Jakość usług (QoS)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.4.4. Ekstranet to kontrolowana prywatna infrastruktura organizacji, która udostępnia wybrane zasoby uprawnionym osobom spoza niej, na przykład dostawcom, partnerom biznesowym i klientom. Ograniczony dostęp pozwala współpracować bez otwierania całej sieci firmowej."
+    },
+    {
+      "id": "m1-3-q056",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się przechowywanie prywatnych plików na serwerach w Internecie, aby uzyskiwać do nich dostęp z dowolnego miejsca, w dowolnym czasie i z różnych urządzeń?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chmura"
+        },
+        {
+          "id": "b",
+          "text": "BYOD"
+        },
+        {
+          "id": "c",
+          "text": "Jakość usług (QoS)"
+        },
+        {
+          "id": "d",
+          "text": "Sieć konwergentna"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.7.6. Chmura polega na przechowywaniu i przetwarzaniu danych na zdalnych serwerach dostępnych przez Internet, zamiast wyłącznie na lokalnym dysku. Umożliwia korzystanie z plików, aplikacji i usług z różnych urządzeń i lokalizacji."
+    },
+    {
+      "id": "m1-3-q057",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się model sieci, w którym jeden komputer może być zarówno klientem, jak i serwerem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Równorzędny (peer-to-peer)"
+        },
+        {
+          "id": "b",
+          "text": "Chmura"
+        },
+        {
+          "id": "c",
+          "text": "BYOD"
+        },
+        {
+          "id": "d",
+          "text": "Jakość usług (QoS)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.2.2. W sieci peer-to-peer komputer może udostępniać własne pliki lub drukarkę jako serwer, a jednocześnie pobierać zasoby innych komputerów jako klient. Nie jest wymagany serwer dedykowany. Model jest tani w małych sieciach, ale ma ograniczenia skalowalności i centralnego zarządzania bezpieczeństwem."
+    },
+    {
+      "id": "m1-3-q058",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się typ sieci używany przez osoby pracujące z domu lub z małego zdalnego biura?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sieć SOHO"
+        },
+        {
+          "id": "b",
+          "text": "BYOD"
+        },
+        {
+          "id": "c",
+          "text": "Jakość usług (QoS)"
+        },
+        {
+          "id": "d",
+          "text": "Sieć konwergentna"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.4.1. SOHO oznacza Small Office, Home Office, czyli małe biuro lub biuro domowe. Taka sieć zwykle obsługuje niewiele urządzeń i może korzystać z jednego urządzenia łączącego funkcje routera, przełącznika i punktu dostępowego Wi-Fi."
+    },
+    {
+      "id": "m1-3-q059",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się model, w którym oprogramowanie serwerowe działa na dedykowanych komputerach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Klient-serwer"
+        },
+        {
+          "id": "b",
+          "text": "Internet"
+        },
+        {
+          "id": "c",
+          "text": "Intranet"
+        },
+        {
+          "id": "d",
+          "text": "Ekstranet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.2.2. W modelu klient-serwer serwery udostępniają usługi i obsługują żądania wielu klientów. Dedykowane serwery mogą świadczyć usługi WWW, plików lub poczty. W odróżnieniu od sieci peer-to-peer role i zasoby są scentralizowane."
+    },
+    {
+      "id": "m1-3-q061",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się technologia umożliwiająca podłączenie urządzeń do sieci LAN przez gniazdko elektryczne?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Powerline — transmisja przez instalację elektryczną"
+        },
+        {
+          "id": "b",
+          "text": "Internet"
+        },
+        {
+          "id": "c",
+          "text": "Intranet"
+        },
+        {
+          "id": "d",
+          "text": "Ekstranet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.7.8. Adaptery powerline podłączone do gniazdek przesyłają dane przez istniejące przewody elektryczne. Pozwalają rozszerzyć sieć LAN bez układania dodatkowego okablowania Ethernet."
+    },
+    {
+      "id": "m1-3-q062",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się polityka, dzięki której urządzenia sieciowe zarządzają przepływem danych, nadając priorytet transmisjom głosu i obrazu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jakość usług (QoS)"
+        },
+        {
+          "id": "b",
+          "text": "Internet"
+        },
+        {
+          "id": "c",
+          "text": "Intranet"
+        },
+        {
+          "id": "d",
+          "text": "Ekstranet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.6.4. QoS przydziela zasoby i nadaje priorytety transmisjom wrażliwym na opóźnienia, takim jak głos i wideo. Ogranicza opóźnienia i ich zmienność podczas przeciążenia. Internet, intranet i ekstranet określają zakres dostępu do sieci, a nie priorytety ruchu."
+    },
+    {
+      "id": "m1-3-q063",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się prywatny zbiór sieci LAN i WAN należący do organizacji?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intranet"
+        },
+        {
+          "id": "b",
+          "text": "Internet"
+        },
+        {
+          "id": "c",
+          "text": "Ekstranet"
+        },
+        {
+          "id": "d",
+          "text": "Sieć równorzędna (peer-to-peer)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.4.4. Intranet jest prywatną siecią organizacji przeznaczoną do bezpiecznej wymiany wewnętrznych danych i zasobów przez jej członków oraz inne wyraźnie uprawnione osoby."
+    },
+    {
+      "id": "m1-3-q064",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywa się możliwość korzystania z prywatnych urządzeń w sieci firmowej lub kampusowej?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BYOD"
+        },
+        {
+          "id": "b",
+          "text": "Internet"
+        },
+        {
+          "id": "c",
+          "text": "Intranet"
+        },
+        {
+          "id": "d",
+          "text": "Ekstranet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 1.7.2. BYOD (Bring Your Own Device) oznacza dopuszczenie prywatnych laptopów, smartfonów i tabletów użytkowników do sieci oraz zasobów organizacji."
+    },
+    {
+      "id": "m1-3-q065",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji do PDU dodawany jest źródłowy adres IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sieciowej"
+        },
+        {
+          "id": "b",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "c",
+          "text": "Transportowej"
+        },
+        {
+          "id": "d",
+          "text": "Aplikacji"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.4. Źródłowy adres IP jest umieszczany w nagłówku pakietu w warstwie sieciowej."
+    },
+    {
+      "id": "m1-3-q066",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji do PDU dodawany jest numer portu docelowego?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transportowej"
+        },
+        {
+          "id": "b",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "c",
+          "text": "Sieciowej"
+        },
+        {
+          "id": "d",
+          "text": "Aplikacji"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Warstwa transportowa dodaje nagłówek z numerami portów źródłowego i docelowego. Port docelowy wskazuje aplikację lub usługę, do której odbiorca ma przekazać dane, na przykład HTTP, HTTPS lub DNS."
+    },
+    {
+      "id": "m1-3-q067",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji powstają dane przekazywane jako PDU do niższych warstw?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aplikacji"
+        },
+        {
+          "id": "b",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "c",
+          "text": "Sieciowej"
+        },
+        {
+          "id": "d",
+          "text": "Transportowej"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. W warstwie aplikacji informacje użytkownika są przygotowywane zgodnie z protokołem, takim jak HTTP, FTP lub SMTP. Dane są następnie przekazywane w dół stosu, gdzie kolejne warstwy dodają informacje sterujące i tworzą segmenty, pakiety oraz ramki."
+    },
+    {
+      "id": "m1-3-q068",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji do PDU dodawany jest źródłowy adres IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sieciowej"
+        },
+        {
+          "id": "b",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "c",
+          "text": "Aplikacji"
+        },
+        {
+          "id": "d",
+          "text": "Prezentacji"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.4. Warstwa sieciowa tworzy pakiet z nagłówkiem zawierającym źródłowy i docelowy adres IP. Adresy te umożliwiają dostarczenie pakietu między połączonymi sieciami. Zachowano ten wariant pytania z PDF, mimo podobieństwa do pytania 65."
+    },
+    {
+      "id": "m1-3-q069",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jak nazywają się wszystkie komputery podłączone do sieci, które bezpośrednio uczestniczą w komunikacji sieciowej?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serwery"
+        },
+        {
+          "id": "b",
+          "text": "Urządzenia pośredniczące"
+        },
+        {
+          "id": "c",
+          "text": "Hosty"
+        },
+        {
+          "id": "d",
+          "text": "Media transmisyjne"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 1.2.1. Hosty to komputery podłączone do sieci, które bezpośrednio uczestniczą w komunikacji sieciowej."
+    },
+    {
+      "id": "m1-3-q070",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji do PDU dodawany jest docelowy adres IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sieciowej"
+        },
+        {
+          "id": "b",
+          "text": "Aplikacji"
+        },
+        {
+          "id": "c",
+          "text": "Transportowej"
+        },
+        {
+          "id": "d",
+          "text": "Prezentacji"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Warstwa sieciowa dodaje nagłówek pakietu ze źródłowym i docelowym adresem IP. Routery wykorzystują adres docelowy do wyboru dalszej drogi pakietu aż do sieci odbiorcy."
+    },
+    {
+      "id": "m1-3-q071",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji do PDU dodawany jest źródłowy adres MAC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "b",
+          "text": "Aplikacji"
+        },
+        {
+          "id": "c",
+          "text": "Transportowej"
+        },
+        {
+          "id": "d",
+          "text": "Prezentacji"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Warstwa łącza danych tworzy ramkę i dodaje źródłowy adres MAC nadawcy oraz docelowy adres MAC następnego odbiorcy w lokalnym segmencie. Pozwala to rozpoznać nadawcę i odbiorcę na danym łączu."
+    },
+    {
+      "id": "m1-3-q072",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji do PDU dodawany jest numer portu źródłowego?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transportowej"
+        },
+        {
+          "id": "b",
+          "text": "Aplikacji"
+        },
+        {
+          "id": "c",
+          "text": "Sieciowej"
+        },
+        {
+          "id": "d",
+          "text": "Prezentacji"
+        },
+        {
+          "id": "e",
+          "text": "Łącza danych"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Warstwa transportowa dodaje numery portów źródłowego i docelowego. Port źródłowy identyfikuje aplikację lub sesję inicjującą komunikację, aby odpowiedź trafiła do właściwego programu."
+    },
+    {
+      "id": "m1-3-q073",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "W której warstwie modelu OSI podczas enkapsulacji do PDU dodawany jest docelowy adres MAC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Łącza danych"
+        },
+        {
+          "id": "b",
+          "text": "Transportowej"
+        },
+        {
+          "id": "c",
+          "text": "Aplikacji"
+        },
+        {
+          "id": "d",
+          "text": "Sieciowej"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 3.6.3. Docelowy adres MAC jest dodawany w nagłówku ramki w warstwie łącza danych."
+    },
+    {
+      "id": "m1-3-q074",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Jakie medium transmisyjne jest wykorzystywane, gdy dane są kodowane w postaci impulsów świetlnych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Łącze bezprzewodowe"
+        },
+        {
+          "id": "b",
+          "text": "Kabel światłowodowy"
+        },
+        {
+          "id": "c",
+          "text": "Kabel miedziany"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 1.2.5. Kabel światłowodowy przenosi dane w postaci impulsów światła. Poprawiono oczywistą literówkę „Fire optic cable” w odpowiedzi źródłowej na polski termin „kabel światłowodowy”."
+    },
+    {
+      "id": "m1-3-q075",
+      "moduleId": "1-3",
+      "type": "multiple_select",
+      "prompt": "Które dwa urządzenia są urządzeniami pośredniczącymi?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Host"
+        },
+        {
+          "id": "b",
+          "text": "Router"
+        },
+        {
+          "id": "c",
+          "text": "Przełącznik"
+        },
+        {
+          "id": "d",
+          "text": "Serwery"
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "c"
+      ],
+      "explanation": "Zagadnienia 1.2.4 i 1.3.1. Routery i przełączniki pośredniczą w przesyłaniu danych. Hosty i serwery są urządzeniami końcowymi."
+    },
+    {
+      "id": "m1-3-q076",
+      "moduleId": "1-3",
+      "type": "single_select",
+      "prompt": "Uczelnia buduje nowy akademik na kampusie. Podczas układania wodociągu pracownik przypadkowo uszkadza światłowód łączący dwa istniejące akademiki z centrum danych. Mimo przecięcia kabla studenci odczuwają tylko bardzo krótką przerwę w usługach sieciowych. Jaką cechę sieci ilustruje ta sytuacja?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jakość usług (QoS)"
+        },
+        {
+          "id": "b",
+          "text": "Skalowalność"
+        },
+        {
+          "id": "c",
+          "text": "Bezpieczeństwo"
+        },
+        {
+          "id": "d",
+          "text": "Odporność na awarie"
+        },
+        {
+          "id": "e",
+          "text": "Integralność"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 1.6.2. Odporność na awarie umożliwia szybką reakcję na uszkodzenia urządzeń, mediów lub usług. QoS dotyczy zapewniania zasobów wymaganym transmisjom, skalowalność rozbudowy sieci, bezpieczeństwo ochrony danych i infrastruktury, a integralność kompletności i nienaruszalności danych."
+    }
+  ]
+}
