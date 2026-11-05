@@ -56,8 +56,7 @@ p { max-width: 65ch; }
 .site-header nav a span { margin-left: 12px; }
 .app-shell { position: relative; isolation: isolate; min-height: 100svh; overflow-x: clip; color: var(--foreground); background: var(--background); }
 .site-background { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
-.site-background::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, oklch(12% .005 250 / .8), oklch(12% .005 250 / .2) 80%); }
-.app-shell:not(.home-shell) .site-background::after { background: oklch(12% .005 250 / .9); }
+.site-background::after { content: ''; position: absolute; inset: 0; background: oklch(12% .005 250 / .9); }
 .site-header, .main-container, .home-container { position: relative; z-index: 1; }
 .site-header nav a { color: oklch(83% .01 250); }
 .home-shell .network-animation { --hairline-plate: oklch(12% .005 250); --hairline-edge: oklch(66% .01 250); --hairline-mid: oklch(52% .01 250); --hairline-lo: oklch(39% .01 250); }
