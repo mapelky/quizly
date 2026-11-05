@@ -1,7 +1,7 @@
 (() => {
 if (!window.HL || typeof window.hairline !== 'function') return;
 const {
-  Cam, fit, proj, facing, rings, prism, rrect, poly, seg, lerp, EASE_LIFT, reducedMotion, tween, tset, tval, tdone,
+  Cam, fit, proj, facing, rings, prism, rrect, poly, seg, lerp, reducedMotion, tween, tset, tval, tdone,
   mk, solid, put, place, pointer, register, disposer,
 } = window.HL;
 
@@ -11,21 +11,33 @@ function mount({ stage, svg, read }, value) {
   const C = Cam(45, .5, 1.5);
   fit(C, [[-84, -76, -5], [-84, 84, -5], [84, 84, -5], [84, -76, -5], [-50, 50, 77], [36, -63, 77], [-40, -40, 43]], 200, 166);
   const P = proj(C), front = facing(C);
-  const offsets = [[-40, -40, -90], [0, 0, -50], [0, 0, 0], [0, 0, 0]];
-  const projections = offsets.map(([dx, dy, dz]) => (x, y, z) => P(x + dx, y + dy, z + dz));
+  const offsets = [
+    [52, 60.4, -90, .6],
+    [-42, -47, -50, .8],
+    [-13, 11.5, 0, .75],
+    [9.5, -3.1, 0, .8],
+  ];
+  const projections = offsets.map(([dx, dy, dz, scale]) =>
+    (x, y, z) => P(x * scale + dx, y * scale + dy, (z + dz) * scale));
   const board = solid(svg);
   const [boardRing, boardInner] = rings(-84, -76, 84, 84, 8, 1.5);
   put(board, prism(P, front, boardRing, boardInner, -5, -1));
   const links = Array.from({ length: 3 }, () => mk('path', { class: 'nf sil' }, svg));
-  const packet = mk('circle', { r: 1.5, class: 'dot' }, svg);
+  const packets = [0, 1].map(() => mk('circle', { r: 1.5, class: 'dot' }, svg));
   const groups = Array.from({ length: 4 }, () => mk('g', {}, svg));
+  // Paint the cable ends over the switch face so the connections are visible.
+  svg.insertBefore(groups[1], links[0]);
   const router = solid(groups[0]), antennas = [solid(groups[0]), solid(groups[0])];
   const routerVents = mk('path', { class: 'nf lo' }, groups[0]);
   const routerLights = [0, 1, 2].map(() => mk('circle', { r: .8, class: 'dot m' }, groups[0]));
   const sw = solid(groups[1]);
   const ports = Array.from({ length: 6 }, () => mk('path', { class: 'nf' }, groups[1]));
+  const switchPort = i => [-24.5 + i * 10, 16.1, 54.25];
   const base = solid(groups[2]), stem = solid(groups[2]), monitor = solid(groups[2]);
   const screen = mk('path', { class: 'nf lo' }, groups[2]);
+  const tower = solid(groups[2]);
+  const towerVents = mk('path', { class: 'nf lo' }, groups[2]);
+  const towerLight = mk('circle', { r: .9, class: 'dot m' }, groups[2]);
   const keyboard = solid(groups[2]), keys = mk('path', { class: 'nf lo' }, groups[2]);
   const server = solid(groups[3]);
   const bays = Array.from({ length: 3 }, () => mk('path', { class: 'nf' }, groups[3]));
@@ -33,8 +45,8 @@ function mount({ stage, svg, read }, value) {
   const serverVents = mk('path', { class: 'nf lo' }, groups[3]);
   const lifts = groups.map(() => tween(0)), drawn = groups.map(() => NaN);
   const names = ['router', 'switch', 'komputer', 'serwer'];
-  const centres = [[0, 0, 103], [0, 0, 55], [-50, 50, 40], [50, -50, 32]].map((point, i) => projections[i](...point));
-  const hitSizes = [[55, 31], [56, 21], [53, 54], [38, 52]];
+  const centres = [[0, 0, 103], [0, 0, 55], [-36, 49, 22], [50, -50, 32]].map((point, i) => projections[i](...point));
+  const hitSizes = [[33, 23], [45, 20], [50, 36], [30, 42]];
   let curves = [];
 
   function block(P, part, x0, y0, x1, y1, radius, z0, z1, lift) {
@@ -54,14 +66,20 @@ function mount({ stage, svg, read }, value) {
   function drawSwitch(lift) {
     const P = projections[1];
     block(P, sw, -35, -16, 35, 16, 3, 50, 59, lift);
-    ports.forEach((port, i) => port.setAttribute('d', face(P, -28 + i * 10, 52, -21 + i * 10, 56.5, 16.1, lift, .7)));
+    ports.forEach((port, i) => {
+      const [x, y, z] = switchPort(i);
+      port.setAttribute('d', face(P, x - 3.5, z - 2.25, x + 3.5, z + 2.25, y, lift, .7));
+    });
   }
   function drawComputer(lift) {
     const P = projections[2];
     block(P, base, -61, 44, -39, 59, 3, 0, 3, lift);
-    block(P, stem, -53, 46, -48, 50, 1.8, 3, 29, lift);
-    block(P, monitor, -76, 42, -24, 47, 2, 26, 65, lift);
-    screen.setAttribute('d', face(P, -72, 32, -28, 61, 47.1, lift, 1.8));
+    block(P, stem, -53, 46, -48, 50, 1.8, 3, 15, lift);
+    block(P, monitor, -76, 42, -24, 47, 2, 13, 47, lift);
+    screen.setAttribute('d', face(P, -72, 18, -28, 43, 47.1, lift, 1.8));
+    block(P, tower, -14, 30, 2, 52, 2.5, 0, 37, lift);
+    towerVents.setAttribute('d', [8, 12, 16].map(z => seg(P(-11, 52.1, z + lift), P(-1, 52.1, z + lift))).join(''));
+    place(towerLight, P(-6, 52.1, 29 + lift));
     block(P, keyboard, -75, 64, -28, 78, 2.5, 0, 3, lift);
     keys.setAttribute('d', [68, 72, 75].map(y => seg(P(-71, y, 3 + lift), P(-32, y, 3 + lift))).join(''));
   }
@@ -78,12 +96,16 @@ function mount({ stage, svg, read }, value) {
   const draw = [drawRouter, drawSwitch, drawComputer, drawServer];
   function drawLinks(z) {
     const port = (i, x, y, height) => projections[i](x, y, height + z[i]);
+    const swPort = i => port(1, ...switchPort(i));
+    const lead = ([x, y]) => [x - 7, y + 14];
     const pairs = [
-      [port(0, 0, 16, 95), port(1, 0, -12, 59)],
-      [port(1, -24, 16, 54), port(2, -75, 43, 34)],
-      [port(1, 24, 16, 54), port(3, 37, -37, 26)],
+      [port(0, -9, -16, 96), swPort(3)],
+      [swPort(1), port(2, 2, 30, 30)],
+      [swPort(5), port(3, 37, -37, 26)],
     ];
-    curves = pairs.map(([a, b]) => [a, [a[0], lerp(a[1], b[1], .55)], [b[0], lerp(a[1], b[1], .65)], b]);
+    curves = pairs.map(([a, b], i) => i === 0
+      ? [a, [a[0], lerp(a[1], b[1], .55)], lead(b), b]
+      : [a, lead(a), [b[0], lerp(a[1], b[1], .65)], b]);
     links.forEach((link, i) => link.setAttribute('d', `M${curves[i][0]} C${curves[i].slice(1).join(' ')}`));
   }
   function onCurve(points, t) {
@@ -98,11 +120,15 @@ function mount({ stage, svg, read }, value) {
       drawn[i] = lift; draw[i](lift); changed = true;
     });
     if (changed) drawLinks(positions);
-    if (!reducedMotion()) elapsed += dt;
-    const cycle = elapsed / 3.2, progress = Math.min((cycle % 1) / .85, 1) * 2;
-    const leg = Math.min(1, Math.floor(progress)), branch = Math.floor(cycle) % 2 ? 2 : 1;
-    place(packet, onCurve(curves[leg === 0 ? 0 : branch], EASE_LIFT(Math.min(1, progress - leg))));
-    return !reducedMotion() || lifts.some(t => !tdone(t, now));
+    const stationary = reducedMotion();
+    if (!stationary) elapsed += dt;
+    packets.forEach((packet, i) => {
+      const cycle = elapsed / 2.6 + (i + .5) / packets.length;
+      const progress = (cycle % 1) * 2;
+      const leg = Math.floor(progress), branch = Math.floor(cycle) % 2 ? 2 : 1;
+      place(packet, onCurve(curves[leg === 0 ? 0 : branch], progress - leg));
+    });
+    return !stationary || lifts.some(t => !tdone(t, now));
   });
   bag.add(loop.unregister);
   function choose(next) {
@@ -133,7 +159,7 @@ hairline({
   means: 'Four devices on a shared LAN board: router, switch, computer and server. Hover gently lifts the selected device.',
   rules: [1, 2, 4, 6, 7, 8, 9],
   range: [3, 6, 10],
-  tour: [[98, 123], [204, 116], [310, 134], null],
+  tour: [[111, 162], [194, 222], [303, 147], null],
   mount,
 });
 })();

@@ -66,7 +66,7 @@ p { max-width: 65ch; }
 .network-animation > img { display: block; width: 100%; height: auto; }
 .home h1 { font-family: 'Albert Sans', var(--font-sans); font-size: clamp(2rem, 5vw, 4rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.15; text-align: center; }
 .home-title-line { display: block; white-space: nowrap; }
-.home-title-brand { font-weight: inherit; font-family: 'Instrument Serif', serif; font-style: italic; letter-spacing: -3px; font-size: 1.16em; }
+.home-title-brand { font-weight: inherit; font-family: 'Instrument Serif', serif; font-style: italic; letter-spacing: -3px; font-size: 1.16em; text-shadow: 0 0 .3em color-mix(in oklch, var(--foreground) 30%, transparent); }
 .home-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
 .home-actions > button { min-width: 176px; min-height: 48px; }
 .main-container { max-width: 1280px; margin-inline: auto; padding: 40px var(--page-gutter) 64px; }
