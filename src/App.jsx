@@ -78,7 +78,7 @@ export default function App() {
     <a className="skip-link" href="#main">Przejdź do treści</a>
     <header className="site-header">
       {session ? <span className="brand"><img src="/favicon.svg" alt="" />Quizly</span> : <a href="/" className="brand" aria-label="Quizly — strona główna"><img src="/favicon.svg" alt="" />Quizly</a>}
-      {!session && <nav aria-label="Nawigacja główna"><a href={isModules ? '/' : '/moduly'}>{isModules ? 'Strona główna' : 'Moduły i pytania'}<span aria-hidden="true"> ↗</span></a></nav>}
+      {!session && <nav aria-label="Nawigacja główna"><a href={isModules ? '/' : '/moduly'}>{isModules ? 'Strona główna' : 'Moduły i pytania'}</a></nav>}
     </header>
 
     <main id="main" className={session ? 'main-container quiz-container' : isModules ? 'main-container modules-container' : 'home-container'}>

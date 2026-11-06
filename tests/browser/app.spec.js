@@ -120,7 +120,7 @@ test('keeps graphics alive through the dev StrictMode effect replay', async ({ p
   for (let i = 0; i < 3; i++) {
     await page.getByRole('button', { name: 'Losuj 1 pytanie', exact: true }).click();
     await expectLiveGraphics(page);
-    await page.getByRole('button', { name: '← Strona główna' }).click();
+    await page.getByRole('button', { name: 'Strona główna' }).click();
     await expect(page.locator('#home-title')).toBeVisible();
     await expectLiveGraphics(page);
   }
@@ -153,7 +153,7 @@ test('warns for partial matching, but not empty choices or a graded quick answer
   expect(await page.evaluate(() => window.dispatchEvent(new Event('beforeunload', { cancelable: true })))).toBe(true);
   await page.getByRole('button', { name: 'Następne pytanie' }).click();
   expect(await page.evaluate(() => window.dispatchEvent(new Event('beforeunload', { cancelable: true })))).toBe(true);
-  await page.getByRole('button', { name: '← Strona główna' }).click();
+  await page.getByRole('button', { name: 'Strona główna' }).click();
   await useQuestions(page, [multiple]);
   await page.reload();
   await page.getByRole('button', { name: 'Losuj 1 pytanie', exact: true }).click();

@@ -53,7 +53,6 @@ p { max-width: 65ch; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 1rem; letter-spacing: -.04em; }
 .brand img { display: block; width: 28px; height: 28px; }
 .site-header nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; color: var(--muted); }
-.site-header nav a span { margin-left: 12px; }
 .app-shell { position: relative; isolation: isolate; min-height: 100svh; overflow-x: clip; color: var(--foreground); background: var(--background); }
 .site-background { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
 .site-background::after { content: ''; position: absolute; inset: 0; background: oklch(12% .005 250 / .9); }
