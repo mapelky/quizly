@@ -82,6 +82,19 @@ test('keeps modules 1–3 usable when the modules 4–7 bank cannot load', async
   await expect(page.locator('.question-meta')).toContainText('1-3');
 });
 
+test('times out a stalled modules 4–7 request and keeps modules 1–3 usable', async ({ page }) => {
+  await page.clock.install();
+  await page.route('**/questions-4-7.json', () => {});
+  const stalledRequest = page.waitForRequest('**/questions-4-7.json');
+  await page.goto('/moduly');
+  await stalledRequest;
+  await page.clock.fastForward(10_000);
+  await expect(page.getByRole('alert')).toContainText('części wbudowanych pytań');
+  await expect(page.locator('.bank-information')).toContainText('75 pytań');
+  await page.getByRole('button', { name: 'Test z modułu', exact: true }).click();
+  await expect(page.locator('.question-meta')).toContainText('1-3');
+});
+
 for (const asset of ['kernel.js', 'register.js', 'network.js']) {
   test(`keeps home and quiz usable without Hairline ${asset}`, async ({ page }) => {
     const errors = [];

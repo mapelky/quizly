@@ -36,12 +36,16 @@ export default function App() {
         }
       } catch { storageNotice = 'Nie udało się odczytać zapisanych pytań. Wyświetlamy dostępną bazę.'; }
       for (const path of ['/questions.json', '/questions-4-7.json']) {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 10_000);
         try {
-          const response = await fetch(path);
+          const response = await fetch(path, { signal: controller.signal });
           if (!response.ok) throw new Error();
           builtInBank = mergeBanks(builtInBank, parseBank(await response.text()));
         } catch {
           storageNotice = 'Nie udało się wczytać części wbudowanych pytań. Odśwież stronę i spróbuj ponownie.';
+        } finally {
+          clearTimeout(timeout);
         }
       }
       if (active) {
