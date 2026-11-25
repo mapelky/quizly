@@ -11,7 +11,7 @@ design/network/network-preview.html
 
 # Local working files
 .impeccable.md
-docs/superpowers/
+docs/
 .playwright-cli/
 output/playwright/
 tmp/
