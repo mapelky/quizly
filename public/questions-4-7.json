@@ -1,0 +1,2287 @@
+{
+  "version": 1,
+  "description": "Moduły 4–7: Pojęcia Ethernet.",
+  "questions": [
+    {
+      "id": "m4-7-q001",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jakie jest zadanie warstwy fizycznej modelu OSI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kontrolowanie dostępu do medium"
+        },
+        {
+          "id": "b",
+          "text": "Przesyłanie bitów przez lokalne medium transmisyjne"
+        },
+        {
+          "id": "c",
+          "text": "Wykrywanie błędów w odebranych ramkach"
+        },
+        {
+          "id": "d",
+          "text": "Wymiana ramek między węzłami przez fizyczne media sieciowe"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 4.1.1. Warstwa fizyczna przesyła bity zakodowane jako sygnały elektryczne, świetlne lub radiowe."
+    },
+    {
+      "id": "m4-7-q002",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Dlaczego w jednym połączeniu światłowodowym wykorzystuje się dwa włókna?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pozwalają przesyłać dane na większą odległość bez pogorszenia sygnału."
+        },
+        {
+          "id": "b",
+          "text": "Zapobiegają zakłóceniom powodowanym przez przesłuchy."
+        },
+        {
+          "id": "c",
+          "text": "Zwiększają prędkość rozchodzenia się danych."
+        },
+        {
+          "id": "d",
+          "text": "Umożliwiają komunikację w trybie full-duplex."
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 4.5.4. W typowym dwuwłóknowym łączu jedno włókno służy do nadawania, a drugie do odbierania, dzięki czemu transmisja odbywa się jednocześnie w obu kierunkach. Istnieją również rozwiązania BiDi korzystające z jednego włókna."
+    },
+    {
+      "id": "m4-7-q003",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Która cecha opisuje przesłuchy (crosstalk)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zniekształcenie sygnału sieciowego przez oświetlenie fluorescencyjne"
+        },
+        {
+          "id": "b",
+          "text": "Zniekształcenie przesyłanych danych przez sygnały w sąsiednich przewodach"
+        },
+        {
+          "id": "c",
+          "text": "Osłabienie sygnału sieciowego na długim odcinku kabla"
+        },
+        {
+          "id": "d",
+          "text": "Utrata sygnału bezprzewodowego wskutek zbyt dużej odległości od punktu dostępowego"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 4.3.1. Przesłuch występuje, gdy pole elektryczne lub magnetyczne sygnału w jednym przewodzie zakłóca sygnał w sąsiednim przewodzie."
+    },
+    {
+      "id": "m4-7-q004",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jakie działanie ogranicza wpływ przesłuchów w kablach miedzianych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zapewnienie odpowiedniego uziemienia"
+        },
+        {
+          "id": "b",
+          "text": "Skręcanie ze sobą dwóch przewodów tworzących parę obwodu"
+        },
+        {
+          "id": "c",
+          "text": "Otaczanie wiązki przewodów metalowym ekranem"
+        },
+        {
+          "id": "d",
+          "text": "Projektowanie infrastruktury kablowej tak, aby unikać przesłuchów"
+        },
+        {
+          "id": "e",
+          "text": "Unikanie ostrych zagięć podczas instalacji"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 4.3.1. Skręcanie par ogranicza zakłócenia i przesłuchy. Ekranowanie oraz uziemienie mają inne zadania ochronne; w tym pytaniu chodzi o skręcanie przewodów."
+    },
+    {
+      "id": "m4-7-q005",
+      "moduleId": "4-7",
+      "type": "matching",
+      "prompt": "Dopasuj sytuację do odpowiedniego medium transmisyjnego.",
+      "pairs": [
+        {
+          "id": "p1",
+          "prompt": "Okablowanie poziome",
+          "answer": "Kable miedziane"
+        },
+        {
+          "id": "p2",
+          "prompt": "Komputery stacjonarne w biurach przedsiębiorstwa",
+          "answer": "Kable miedziane"
+        },
+        {
+          "id": "p3",
+          "prompt": "Okablowanie szkieletowe w przedsiębiorstwie",
+          "answer": "Światłowód"
+        },
+        {
+          "id": "p4",
+          "prompt": "Sieci dalekiego zasięgu",
+          "answer": "Światłowód"
+        },
+        {
+          "id": "p5",
+          "prompt": "Dostęp dla gości w kawiarni",
+          "answer": "Sieć bezprzewodowa"
+        },
+        {
+          "id": "p6",
+          "prompt": "Poczekalnie w szpitalu",
+          "answer": "Sieć bezprzewodowa"
+        }
+      ],
+      "explanation": "Zagadnienie 4.3.3. Miedź jest typowym medium krótkich połączeń biurowych. Światłowód nadaje się do szkieletu sieci i dużych odległości, a Wi-Fi zapewnia wygodny dostęp urządzeniom mobilnym."
+    },
+    {
+      "id": "m4-7-q006",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Administrator mierzy transmisję bitów w szkielecie firmowej sieci dla ważnej aplikacji finansowej. Rzeczywista szybkość transmisji jest niższa od oczekiwanej przepustowości łączy. Które trzy czynniki mogą powodować tę różnicę? Wybierz trzy odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ilość ruchu aktualnie przesyłanego w sieci"
+        },
+        {
+          "id": "b",
+          "text": "Stopień złożoności zastosowanej metody enkapsulacji danych"
+        },
+        {
+          "id": "c",
+          "text": "Rodzaj ruchu przesyłanego w sieci"
+        },
+        {
+          "id": "d",
+          "text": "Opóźnienia wprowadzane przez urządzenia sieciowe na drodze danych"
+        },
+        {
+          "id": "e",
+          "text": "Przepustowość połączenia WAN z Internetem"
+        },
+        {
+          "id": "f",
+          "text": "Niezawodność gigabitowej infrastruktury Ethernet szkieletu sieci"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "c",
+        "d"
+      ],
+      "explanation": "Zagadnienie 4.2.6. Na throughput wpływają obciążenie, charakter ruchu oraz opóźnienia urządzeń pośredniczących. Nominalna przepustowość medium nie jest pomiarem rzeczywistego transferu."
+    },
+    {
+      "id": "m4-7-q007",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie cechy opisują kabel światłowodowy? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nie jest podatny na EMI ani RFI."
+        },
+        {
+          "id": "b",
+          "text": "Każda para przewodów jest owinięta metalową folią."
+        },
+        {
+          "id": "c",
+          "text": "Chroni dane przez połączenie kompensacji, ekranowania i skręcania."
+        },
+        {
+          "id": "d",
+          "text": "Zwykle zawiera cztery pary przewodów światłowodowych."
+        },
+        {
+          "id": "e",
+          "text": "Jest droższy od okablowania UTP."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "e"
+      ],
+      "explanation": "Zagadnienie 4.5.1. Światłowód przesyła światło, dlatego jest odporny na zakłócenia elektromagnetyczne i radiowe. W kontekście pytania jego instalacja jest droższa i wymaga większych umiejętności niż instalacja UTP."
+    },
+    {
+      "id": "m4-7-q008",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jakie jest podstawowe zadanie warstwy fizycznej podczas przesyłania danych w sieci?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tworzenie w medium sygnałów reprezentujących bity każdej ramki"
+        },
+        {
+          "id": "b",
+          "text": "Zapewnianie urządzeniom adresowania fizycznego"
+        },
+        {
+          "id": "c",
+          "text": "Wyznaczanie drogi pakietów przez sieć"
+        },
+        {
+          "id": "d",
+          "text": "Kontrolowanie dostępu danych do medium"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.1.2. Warstwa fizyczna przyjmuje dane ramki i koduje jej bity jako sygnały przesyłane przez lokalne medium."
+    },
+    {
+      "id": "m4-7-q009",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co powoduje przesłuchy między parami przewodów w nieekranowanej skrętce UTP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pole magnetyczne wokół sąsiednich par przewodów"
+        },
+        {
+          "id": "b",
+          "text": "Zastosowanie plecionki ekranującej sąsiednie pary"
+        },
+        {
+          "id": "c",
+          "text": "Odbicie fali elektrycznej od odległego końca kabla"
+        },
+        {
+          "id": "d",
+          "text": "Kolizja spowodowana jednoczesnym nadawaniem przez dwa węzły"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.3.1. Prąd w przewodzie wytwarza pole magnetyczne, które może zakłócać sygnał w sąsiedniej parze."
+    },
+    {
+      "id": "m4-7-q010",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jaki typ okablowania przedstawiono na ilustracji?",
+      "options": [
+        {
+          "id": "a",
+          "text": "STP"
+        },
+        {
+          "id": "b",
+          "text": "UTP"
+        },
+        {
+          "id": "c",
+          "text": "Kabel koncentryczny"
+        },
+        {
+          "id": "d",
+          "text": "Światłowód"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 4.5.1. Pokazany kabel jest światłowodem. Przesyła dane jako impulsy świetlne przez cienkie włókna szklane lub plastikowe.",
+      "image": {
+        "src": "https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-11_180314-300x234-1.jpg",
+        "alt": "Ilustracja kabla do rozpoznania w pytaniu 10."
+      }
+    },
+    {
+      "id": "m4-7-q011",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Jakie dwa czynniki, poza długością kabla, mogą zakłócać komunikację przez UTP? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przesłuchy"
+        },
+        {
+          "id": "b",
+          "text": "Przepustowość"
+        },
+        {
+          "id": "c",
+          "text": "Rozmiar sieci"
+        },
+        {
+          "id": "d",
+          "text": "Technika modulacji sygnału"
+        },
+        {
+          "id": "e",
+          "text": "Zakłócenia elektromagnetyczne"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "e"
+      ],
+      "explanation": "Zagadnienie 4.3.1. Elektryczne sygnały w kablach miedzianych są podatne na EMI/RFI oraz przesłuchy między przewodami."
+    },
+    {
+      "id": "m4-7-q012",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jaki typ okablowania przedstawiono na ilustracji?",
+      "options": [
+        {
+          "id": "a",
+          "text": "STP"
+        },
+        {
+          "id": "b",
+          "text": "UTP"
+        },
+        {
+          "id": "c",
+          "text": "Kabel koncentryczny"
+        },
+        {
+          "id": "d",
+          "text": "Światłowód"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 4.3.3. UTP zawiera skręcone pary przewodów bez metalowego ekranu. STP ma ekran, kabel koncentryczny ma centralny przewodnik, a światłowód przenosi światło.",
+      "image": {
+        "src": "https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-11_180547.jpg",
+        "alt": "Ilustracja kabla do rozpoznania w pytaniu 12."
+      }
+    },
+    {
+      "id": "m4-7-q013",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwa urządzenia często zakłócają sieci bezprzewodowe? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Odtwarzacze Blu-ray"
+        },
+        {
+          "id": "b",
+          "text": "Zestawy kina domowego"
+        },
+        {
+          "id": "c",
+          "text": "Telefony bezprzewodowe"
+        },
+        {
+          "id": "d",
+          "text": "Kuchenki mikrofalowe"
+        },
+        {
+          "id": "e",
+          "text": "Żarówki żarowe"
+        },
+        {
+          "id": "f",
+          "text": "Zewnętrzne dyski twarde"
+        }
+      ],
+      "correctOptionIds": [
+        "c",
+        "d"
+      ],
+      "explanation": "Zagadnienie 4.6.1. Niektóre telefony bezprzewodowe i kuchenki mikrofalowe mogą zakłócać pasmo 2,4 GHz wykorzystywane przez Wi-Fi."
+    },
+    {
+      "id": "m4-7-q014",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwa stwierdzenia opisują usługi warstwy łącza danych? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Definiuje schemat adresowania zapewniający dostarczanie od nadawcy do odbiorcy końcowego."
+        },
+        {
+          "id": "b",
+          "text": "Utrzymuje drogę między urządzeniem źródłowym i docelowym podczas transmisji."
+        },
+        {
+          "id": "c",
+          "text": "Zarządza dostępem ramek do medium sieciowego."
+        },
+        {
+          "id": "d",
+          "text": "Zapewnia niezawodne dostarczanie przez ustanawianie połączenia i kontrolę przepływu."
+        },
+        {
+          "id": "e",
+          "text": "Zapewnia transmisję danych aplikacji zgodnie z przydzielonymi priorytetami."
+        },
+        {
+          "id": "f",
+          "text": "Umieszcza różne PDU warstwy 3 w ramkach zgodnych z interfejsem sieciowym."
+        }
+      ],
+      "correctOptionIds": [
+        "c",
+        "f"
+      ],
+      "explanation": "Zagadnienie 6.1.1. Warstwa łącza danych enkapsuluje pakiety warstwy sieciowej w ramkach oraz określa zasady dostępu do medium."
+    },
+    {
+      "id": "m4-7-q015",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Do czego służy wartość CRC w polu FCS ramki?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do sprawdzania integralności odebranej ramki"
+        },
+        {
+          "id": "b",
+          "text": "Do weryfikowania adresu fizycznego w ramce"
+        },
+        {
+          "id": "c",
+          "text": "Do weryfikowania adresu logicznego w ramce"
+        },
+        {
+          "id": "d",
+          "text": "Do obliczania nagłówka sumy kontrolnej dla pola danych"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 6.3.2. Odbiorca porównuje obliczoną wartość CRC z FCS. Niezgodność oznacza błąd i prowadzi do odrzucenia ramki."
+    },
+    {
+      "id": "m4-7-q016",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co znajduje się w stopce ramki warstwy łącza danych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adres logiczny"
+        },
+        {
+          "id": "b",
+          "text": "Adres fizyczny"
+        },
+        {
+          "id": "c",
+          "text": "Dane"
+        },
+        {
+          "id": "d",
+          "text": "Informacje służące wykrywaniu błędów"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 6.3.2. Stopka zawiera pole FCS służące wykrywaniu błędów. Informacje adresowe znajdują się w nagłówku."
+    },
+    {
+      "id": "m4-7-q017",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Które stwierdzenie opisuje pola nagłówka ramki warstwy łącza danych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wszystkie zawierają pola kontroli przepływu i połączenia logicznego."
+        },
+        {
+          "id": "b",
+          "text": "Nagłówki ramek Ethernet zawierają źródłowe i docelowe adresy warstwy 3."
+        },
+        {
+          "id": "c",
+          "text": "Różnią się w zależności od protokołu."
+        },
+        {
+          "id": "d",
+          "text": "Zawierają informacje o aplikacjach użytkownika."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 6.3.2. Struktura nagłówka zależy od konkretnego protokołu warstwy łącza danych. Ethernet używa w nagłówku adresów MAC, a nie IP."
+    },
+    {
+      "id": "m4-7-q018",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Zespół porównuje fizyczne topologie WAN łączące oddziały z centralą. Która topologia zapewnia wysoką dostępność i łączy bezpośrednio część, lecz nie wszystkie pary lokalizacji?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pełna siatka (mesh)"
+        },
+        {
+          "id": "b",
+          "text": "Częściowa siatka (partial mesh)"
+        },
+        {
+          "id": "c",
+          "text": "Topologia centralna (hub-and-spoke)"
+        },
+        {
+          "id": "d",
+          "text": "Punkt–punkt"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 6.2.2. Częściowa siatka zapewnia nadmiarowe połączenia między wybranymi lokalizacjami bez konieczności łączenia każdej z każdą."
+    },
+    {
+      "id": "m4-7-q019",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwa pola lub parametry Ethernet sprawdza karta sieciowa, aby zdecydować o przekazaniu odebranej ramki do dalszego przetwarzania albo o jej odrzuceniu? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Auto-MDIX"
+        },
+        {
+          "id": "b",
+          "text": "CEF"
+        },
+        {
+          "id": "c",
+          "text": "Sekwencja kontrolna ramki (FCS)"
+        },
+        {
+          "id": "d",
+          "text": "Minimalny rozmiar ramki"
+        },
+        {
+          "id": "e",
+          "text": "Źródłowy adres MAC"
+        }
+      ],
+      "correctOptionIds": [
+        "c",
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.1.4. Ramka Ethernet krótsza niż 64 bajty lub z niepoprawną wartością FCS jest odrzucana. Rozmiar obejmuje ramkę od adresu docelowego do FCS, bez preambuły i SFD."
+    },
+    {
+      "id": "m4-7-q020",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który tryb komunikacji nie wymaga rozstrzygania dostępu do medium w warstwie łącza danych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deterministyczny"
+        },
+        {
+          "id": "b",
+          "text": "Half-duplex"
+        },
+        {
+          "id": "c",
+          "text": "Full-duplex"
+        },
+        {
+          "id": "d",
+          "text": "Dostęp kontrolowany"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 6.2.5. Full-duplex pozwala jednocześnie nadawać i odbierać. W typowym połączeniu punkt–punkt nie występuje rywalizacja o wspólne medium."
+    },
+    {
+      "id": "m4-7-q021",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Które stwierdzenie opisuje topologię rozszerzonej gwiazdy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Urządzenia końcowe łączą się z centralnym urządzeniem pośredniczącym, które łączy się z kolejnymi centralnymi urządzeniami pośredniczącymi."
+        },
+        {
+          "id": "b",
+          "text": "Urządzenia końcowe są połączone magistralami, a każda magistrala łączy się z centralnym urządzeniem pośredniczącym."
+        },
+        {
+          "id": "c",
+          "text": "Każdy system końcowy łączy się z sąsiadem przez urządzenie pośredniczące."
+        },
+        {
+          "id": "d",
+          "text": "Wszystkie urządzenia końcowe i pośredniczące są połączone w jeden łańcuch."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 6.2.4. Rozszerzona gwiazda powstaje przez połączenie centralnych urządzeń kilku gwiazd."
+    },
+    {
+      "id": "m4-7-q022",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Która cecha opisuje podwarstwę LLC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zapewnia adresowanie logiczne identyfikujące urządzenie."
+        },
+        {
+          "id": "b",
+          "text": "Wyznacza granice danych zgodnie z wymaganiami sygnalizacji fizycznej medium."
+        },
+        {
+          "id": "c",
+          "text": "Umieszcza w ramce informacje umożliwiające wielu protokołom warstwy 3 korzystanie z tego samego interfejsu i medium."
+        },
+        {
+          "id": "d",
+          "text": "Definiuje procesy programowe świadczące usługi warstwie fizycznej."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 6.1.2. LLC identyfikuje protokół warstwy sieciowej i umożliwia współdzielenie interfejsu przez protokoły takie jak IPv4 i IPv6."
+    },
+    {
+      "id": "m4-7-q023",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które trzy stwierdzenia opisują kontrolę dostępu do medium w sieciach? Wybierz trzy odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ethernet wykorzystuje CSMA/CD."
+        },
+        {
+          "id": "b",
+          "text": "Kontrola dostępu do medium określa umieszczanie ramek w medium."
+        },
+        {
+          "id": "c",
+          "text": "Dostęp rywalizacyjny jest również nazywany deterministycznym."
+        },
+        {
+          "id": "d",
+          "text": "Standard 802.11 wykorzystuje CSMA/CD."
+        },
+        {
+          "id": "e",
+          "text": "Protokoły warstwy łącza danych definiują zasady dostępu do różnych mediów."
+        },
+        {
+          "id": "f",
+          "text": "Wydajność sieci z dostępem kontrolowanym spada wskutek kolizji danych."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "e"
+      ],
+      "explanation": "Zagadnienie 6.2.7. Klucz źródłowy odnosi się do współdzielonego Ethernetu half-duplex, który wykorzystuje CSMA/CD. Ethernet full-duplex nie używa CSMA/CD. Wi-Fi używa CSMA/CA, a dostęp kontrolowany jest deterministyczny."
+    },
+    {
+      "id": "m4-7-q024",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co jest dodawane podczas enkapsulacji w warstwie łącza danych komputera połączonego z siecią Ethernet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adres IP"
+        },
+        {
+          "id": "b",
+          "text": "Adres logiczny"
+        },
+        {
+          "id": "c",
+          "text": "Adres fizyczny"
+        },
+        {
+          "id": "d",
+          "text": "Numer portu procesu"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 6.3.3. Nagłówek Ethernet zawiera źródłowy i docelowy adres MAC, czyli adresy fizyczne. Numery portów należą do warstwy transportowej, a IP do sieciowej."
+    },
+    {
+      "id": "m4-7-q025",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które trzy elementy znajdują się w nagłówku i stopce Ethernet? Wybierz trzy odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Źródłowy adres IP"
+        },
+        {
+          "id": "b",
+          "text": "Źródłowy adres MAC"
+        },
+        {
+          "id": "c",
+          "text": "Docelowy adres IP"
+        },
+        {
+          "id": "d",
+          "text": "Docelowy adres MAC"
+        },
+        {
+          "id": "e",
+          "text": "Informacje do wykrywania błędów"
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "d",
+        "e"
+      ],
+      "explanation": "Zagadnienie 6.3.2. Nagłówek Ethernet zawiera adresy MAC, a stopka pole FCS. Adresy IP są częścią pakietu przenoszonego w polu danych ramki."
+    },
+    {
+      "id": "m4-7-q026",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jakim rodzajem reguły komunikacji jest CSMA/CD?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Metodą dostępu do medium"
+        },
+        {
+          "id": "b",
+          "text": "Kontrolą przepływu"
+        },
+        {
+          "id": "c",
+          "text": "Enkapsulacją wiadomości"
+        },
+        {
+          "id": "d",
+          "text": "Kodowaniem wiadomości"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 6.2.6. CSMA/CD określa zasady korzystania ze współdzielonego medium Ethernet half-duplex: nasłuchiwanie, wykrywanie kolizji i ponawianie transmisji."
+    },
+    {
+      "id": "m4-7-q027",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które trzy podstawowe części są wspólne dla typów ramek omawianych w warstwie łącza danych? Wybierz trzy odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nagłówek"
+        },
+        {
+          "id": "b",
+          "text": "Pole typu"
+        },
+        {
+          "id": "c",
+          "text": "Rozmiar MTU"
+        },
+        {
+          "id": "d",
+          "text": "Dane"
+        },
+        {
+          "id": "e",
+          "text": "Stopka"
+        },
+        {
+          "id": "f",
+          "text": "Wartość CRC"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "d",
+        "e"
+      ],
+      "explanation": "Zagadnienie 6.3.1. W modelu omawianym w kursie ramkę dzieli się na nagłówek, dane i stopkę. Konkretne pola zależą od protokołu."
+    },
+    {
+      "id": "m4-7-q028",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Które stwierdzenie o CSMA/CD wykorzystywanym w Ethernecie jest prawdziwe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeśli urządzenie wykrywa sygnał nośny i rozpoczyna transmisję, kolizja nie może wystąpić."
+        },
+        {
+          "id": "b",
+          "text": "Sygnał zagłuszający powoduje uruchomienie algorytmu odczekiwania wyłącznie przez urządzenia, które spowodowały kolizję."
+        },
+        {
+          "id": "c",
+          "text": "Wszystkie urządzenia muszą nasłuchiwać przed rozpoczęciem transmisji."
+        },
+        {
+          "id": "d",
+          "text": "Urządzenia uczestniczące w kolizji mają pierwszeństwo nadawania po okresie odczekiwania."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 6.2.7. Urządzenie nasłuchuje medium przed transmisją. Po wykryciu kolizji nadajniki przerywają transmisję i ponawiają ją po losowym czasie odczekiwania. Dotyczy Ethernetu half-duplex."
+    },
+    {
+      "id": "m4-7-q029",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Na czym polega funkcja auto-MDIX w przełączniku?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatycznie ustawia interfejs do pracy z prędkością 10/100/1000 Mb/s."
+        },
+        {
+          "id": "b",
+          "text": "Automatycznie dostosowuje interfejs do prostego lub krosowanego kabla Ethernet."
+        },
+        {
+          "id": "c",
+          "text": "Automatycznie konfiguruje full-duplex przez pojedynczy kabel miedziany lub światłowodowy."
+        },
+        {
+          "id": "d",
+          "text": "Włącza lub wyłącza interfejs zależnie od wykrycia aktywnego połączenia."
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 7.4.5. Auto-MDIX wykrywa wymagany układ par nadawczych i odbiorczych, pozwalając używać kabla prostego lub krosowanego."
+    },
+    {
+      "id": "m4-7-q030",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Na podstawie schematu wskaż docelowy adres MAC ramki Ethernet opuszczającej serwer WWW, jeżeli końcowym odbiorcą jest PC1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "00-60-2F-3A-07-AA"
+        },
+        {
+          "id": "b",
+          "text": "00-60-2F-3A-07-BB"
+        },
+        {
+          "id": "c",
+          "text": "00-60-2F-3A-07-CC"
+        },
+        {
+          "id": "d",
+          "text": "00-60-2F-3A-07-DD"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 7.3.5. Gdy odbiorca IP znajduje się w innej sieci, serwer wysyła lokalną ramkę do swojej bramy domyślnej. W schemacie adres interfejsu tej bramy to 00-60-2F-3A-07-CC. Adresy MAC zmieniają się między segmentami.",
+      "image": {
+        "src": "https://itexamanswers.net/wp-content/uploads/2019/12/i209881v1n2_209881.png",
+        "alt": "Schemat połączeń serwera WWW, routerów i PC1 wraz z adresami MAC."
+      }
+    },
+    {
+      "id": "m4-7-q031",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Przełącznik warstwy 2 przekazuje ramki z portu 1000BASE-T do portu połączonego z siecią 100BASE-T. Która metoda buforowania pamięci najlepiej nadaje się do tego zadania?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buforowanie oparte na portach"
+        },
+        {
+          "id": "b",
+          "text": "Buforowanie w pamięci podręcznej poziomu 1"
+        },
+        {
+          "id": "c",
+          "text": "Buforowanie we współdzielonej pamięci"
+        },
+        {
+          "id": "d",
+          "text": "Buforowanie o stałej konfiguracji"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 7.4.3. Współdzielona pamięć jest przydzielana dynamicznie i dobrze obsługuje przełączanie asymetryczne między portami o różnych prędkościach."
+    },
+    {
+      "id": "m4-7-q032",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie metody są odmianami przełączania cut-through? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store-and-forward"
+        },
+        {
+          "id": "b",
+          "text": "Fast-forward"
+        },
+        {
+          "id": "c",
+          "text": "Przełączanie CRC"
+        },
+        {
+          "id": "d",
+          "text": "Fragment-free"
+        },
+        {
+          "id": "e",
+          "text": "Przełączanie QoS"
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.4.2. Fast-forward i fragment-free rozpoczynają przekazywanie przed odebraniem całej ramki. Store-and-forward czeka na całą ramkę i sprawdza CRC."
+    },
+    {
+      "id": "m4-7-q033",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Która metoda odbiera całą ramkę i sprawdza CRC przed jej przekazaniem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cut-through"
+        },
+        {
+          "id": "b",
+          "text": "Store-and-forward"
+        },
+        {
+          "id": "c",
+          "text": "Fragment-free"
+        },
+        {
+          "id": "d",
+          "text": "Fast-forward"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 7.4.1. Store-and-forward odbiera i sprawdza kompletną ramkę. Fast-forward i fragment-free są odmianami cut-through."
+    },
+    {
+      "id": "m4-7-q034",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Do czego służy pole FCS w ramce?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do uzyskania adresu MAC węzła wysyłającego"
+        },
+        {
+          "id": "b",
+          "text": "Do sprawdzenia adresu logicznego węzła wysyłającego"
+        },
+        {
+          "id": "c",
+          "text": "Do obliczania nagłówka CRC dla pola danych"
+        },
+        {
+          "id": "d",
+          "text": "Do wykrywania błędów powstałych podczas przesyłania i odbierania ramki"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.1.4. Odbiorca porównuje otrzymane FCS z obliczoną wartością CRC. Niezgodność skutkuje odrzuceniem ramki."
+    },
+    {
+      "id": "m4-7-q035",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Która z wymienionych metod przełączania zapewnia najmniejsze opóźnienie?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cut-through"
+        },
+        {
+          "id": "b",
+          "text": "Store-and-forward"
+        },
+        {
+          "id": "c",
+          "text": "Fragment-free"
+        },
+        {
+          "id": "d",
+          "text": "Fast-forward"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.4.2. Fast-forward, będące odmianą cut-through, rozpoczyna przekazywanie po odczytaniu docelowego MAC. Fragment-free czeka na pierwsze 64 bajty, a store-and-forward na całą ramkę."
+    },
+    {
+      "id": "m4-7-q036",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Administrator łączy dwa nowe, nieskonfigurowane współczesne przełączniki prostym kablem Ethernet. Które trzy stwierdzenia opisują wynik takiego połączenia? Wybierz trzy odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Łącze będzie działać z najwyższą prędkością obsługiwaną przez oba przełączniki."
+        },
+        {
+          "id": "b",
+          "text": "Łącze będzie działać w trybie full-duplex."
+        },
+        {
+          "id": "c",
+          "text": "Jeżeli przełączniki obsługują różne prędkości, każdy będzie pracował z własną najwyższą prędkością."
+        },
+        {
+          "id": "d",
+          "text": "Auto-MDIX dostosuje interfejsy, eliminując konieczność zastosowania kabla krosowanego."
+        },
+        {
+          "id": "e",
+          "text": "Połączenie nie zadziała, dopóki administrator nie wymieni kabla na krosowany."
+        },
+        {
+          "id": "f",
+          "text": "Tryb dupleksu trzeba ustawić ręcznie, ponieważ nie można go negocjować."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.4.4. Przy domyślnej autonegocjacji i auto-MDIX przełączniki uzgadniają wspólną prędkość i full-duplex oraz dostosowują pary kabla."
+    },
+    {
+      "id": "m4-7-q037",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jaką przewagę ma store-and-forward nad cut-through?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wykrywanie kolizji"
+        },
+        {
+          "id": "b",
+          "text": "Sprawdzanie ramki pod kątem błędów"
+        },
+        {
+          "id": "c",
+          "text": "Szybsze przekazywanie ramek"
+        },
+        {
+          "id": "d",
+          "text": "Przekazywanie ramek na podstawie informacji IPv4 z warstw 3 i 4"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 7.4.1. Store-and-forward odbiera całą ramkę i sprawdza FCS przed wysłaniem. Cut-through może przekazać uszkodzoną ramkę, ponieważ zaczyna wysyłanie wcześniej."
+    },
+    {
+      "id": "m4-7-q038",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Która część ramki Ethernet służy do sprawdzania błędów przy przełączaniu store-and-forward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CRC w stopce"
+        },
+        {
+          "id": "b",
+          "text": "Źródłowy MAC w nagłówku"
+        },
+        {
+          "id": "c",
+          "text": "Docelowy MAC w nagłówku"
+        },
+        {
+          "id": "d",
+          "text": "Typ protokołu w nagłówku"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.4.1. Pole FCS w stopce przechowuje wartość CRC używaną do sprawdzania integralności ramki."
+    },
+    {
+      "id": "m4-7-q039",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Która metoda przełączania wykorzystuje wartość CRC ramki do jej weryfikacji przed przekazaniem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cut-through"
+        },
+        {
+          "id": "b",
+          "text": "Fast-forward"
+        },
+        {
+          "id": "c",
+          "text": "Fragment-free"
+        },
+        {
+          "id": "d",
+          "text": "Store-and-forward"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.4.1. Store-and-forward czeka na pełną ramkę i weryfikuje CRC. Odmiany cut-through rozpoczynają przekazywanie bez takiej pełnej kontroli."
+    },
+    {
+      "id": "m4-7-q040",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwa działania wykonuje przełącznik Cisco warstwy 2? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buduje tablicę routingu na podstawie pierwszego adresu IP w nagłówku ramki."
+        },
+        {
+          "id": "b",
+          "text": "Wykorzystuje źródłowe adresy MAC ramek do tworzenia i utrzymywania tablicy MAC."
+        },
+        {
+          "id": "c",
+          "text": "Przekazuje ramki z nieznanym docelowym IP do bramy domyślnej."
+        },
+        {
+          "id": "d",
+          "text": "Wykorzystuje tablicę MAC oraz docelowy adres MAC do przekazywania ramek."
+        },
+        {
+          "id": "e",
+          "text": "Sprawdza docelowy MAC w celu dodawania nowych wpisów do tablicy MAC."
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.3.2. Źródłowy adres MAC służy uczeniu tablicy, a docelowy adres MAC wyborowi sposobu przekazania ramki."
+    },
+    {
+      "id": "m4-7-q041",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwa stwierdzenia opisują cechy lub funkcje podwarstwy LLC w standardach Ethernet? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "LLC jest realizowana programowo."
+        },
+        {
+          "id": "b",
+          "text": "LLC jest określona w standardzie IEEE 802.3."
+        },
+        {
+          "id": "c",
+          "text": "LLC dodaje do danych nagłówek i stopkę."
+        },
+        {
+          "id": "d",
+          "text": "Warstwa łącza danych używa LLC do komunikacji z wyższymi warstwami stosu protokołów."
+        },
+        {
+          "id": "e",
+          "text": "LLC odpowiada za umieszczanie ramek w medium i ich odbieranie z medium."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.1.2. LLC jest podwarstwą programową opisaną w IEEE 802.2 i łączy warstwę łącza danych z protokołami wyższych warstw. Dostęp do medium należy do MAC."
+    },
+    {
+      "id": "m4-7-q042",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Czym jest funkcja auto-MDIX?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pozwala automatycznie dostosować interfejs do kabla prostego lub krosowanego."
+        },
+        {
+          "id": "b",
+          "text": "Pozwala automatycznie ustawiać tryb dupleksu segmentu."
+        },
+        {
+          "id": "c",
+          "text": "Pozwala automatycznie ustawiać prędkość interfejsu."
+        },
+        {
+          "id": "d",
+          "text": "Pozwala przełącznikowi dynamicznie wybierać metodę przekazywania ramek."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.4.5. Auto-MDIX dopasowuje pary nadawcze i odbiorcze do użytego kabla oraz podłączonego urządzenia. Negocjacja prędkości i dupleksu to inne funkcje."
+    },
+    {
+      "id": "m4-7-q043",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jaką zaletę ma cut-through w porównaniu ze store-and-forward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poprawia wykorzystanie przepustowości przez odrzucanie większości niepoprawnych ramek."
+        },
+        {
+          "id": "b",
+          "text": "Szybko wybiera port na podstawie źródłowego adresu MAC."
+        },
+        {
+          "id": "c",
+          "text": "Zapewnia mniejsze opóźnienia, odpowiednie dla zastosowań obliczeniowych o wysokiej wydajności."
+        },
+        {
+          "id": "d",
+          "text": "Zapewnia elastyczną obsługę dowolnej kombinacji prędkości Ethernet."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 7.4.2. Cut-through rozpoczyna przekazywanie po analizie docelowego adresu MAC, co ogranicza opóźnienie. Nie czeka na pełną kontrolę FCS."
+    },
+    {
+      "id": "m4-7-q044",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który adres MAC jest adresem multicast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FF-FF-FF-FF-FF-FF"
+        },
+        {
+          "id": "b",
+          "text": "5C-26-0A-4B-19-3E"
+        },
+        {
+          "id": "c",
+          "text": "01-00-5E-00-00-03"
+        },
+        {
+          "id": "d",
+          "text": "00-26-0F-4B-00-3E"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 7.2.6. Adresy multicast odwzorowujące grupy IPv4 mają prefiks 01-00-5E. FF-FF-FF-FF-FF-FF jest adresem rozgłoszeniowym. Istnieją również inne zakresy multicast, np. 33-33 dla IPv6."
+    },
+    {
+      "id": "m4-7-q045",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jaki błąd popełniono przy zakończeniu kabla widocznym na ilustracji?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nie należało usuwać plecionego ekranu miedzianego."
+        },
+        {
+          "id": "b",
+          "text": "Zastosowano nieprawidłowy typ złącza."
+        },
+        {
+          "id": "c",
+          "text": "Odcinki rozplecionych przewodów są zbyt długie."
+        },
+        {
+          "id": "d",
+          "text": "Przewody są zbyt grube dla użytego złącza."
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Zagadnienie 4.4.2. Pary należy rozplatać możliwie krótko przed złączem RJ-45, a zacisk powinien obejmować zewnętrzny płaszcz kabla, nie wyłącznie pojedyncze żyły.",
+      "image": {
+        "src": "https://itexamanswers.net/wp-content/uploads/2019/12/i274300v1n1_209630-300x221-1.png",
+        "alt": "Zakończenie przewodów kabla we wtyku do oceny poprawności."
+      }
+    },
+    {
+      "id": "m4-7-q046",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Na schemacie komputer jest połączony z portem konsoli przełącznika, a pozostałe połączenia wykorzystują FastEthernet. Jakich kabli UTP należy użyć dla połączeń 1, 2 i 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 – konsolowy rollover, 2 – krosowany, 3 – prosty"
+        },
+        {
+          "id": "b",
+          "text": "1 – konsolowy rollover, 2 – prosty, 3 – krosowany"
+        },
+        {
+          "id": "c",
+          "text": "1 – krosowany, 2 – konsolowy rollover, 3 – prosty"
+        },
+        {
+          "id": "d",
+          "text": "1 – krosowany, 2 – prosty, 3 – konsolowy rollover"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Zagadnienie 4.4.3. Kabel rollover łączy komputer z portem konsoli. Tradycyjnie kabel prosty łączy host z przełącznikiem lub przełącznik z routerem, a krosowany urządzenia tego samego typu. Auto-MDIX może usuwać konieczność rozróżniania tych dwóch kabli Ethernet.",
+      "image": {
+        "src": "https://itexamanswers.net/wp-content/uploads/2019/12/i274301v1n1_206934.png",
+        "alt": "Schemat urządzeń z połączeniami oznaczonymi numerami 1, 2 i 3."
+      }
+    },
+    {
+      "id": "m4-7-q047",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Otwórz zadanie Packet Tracer i wykonaj instrukcje. Którego portu Switch0 używa do wysyłania ramek do hosta o adresie IPv4 10.1.1.5? Uwaga: zadanie wymaga oryginalnego pliku aktywności, którego ten JSON nie zawiera.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fa0/1"
+        },
+        {
+          "id": "b",
+          "text": "Fa0/5"
+        },
+        {
+          "id": "c",
+          "text": "Fa0/9"
+        },
+        {
+          "id": "d",
+          "text": "Fa0/11"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 7.3.2. Według rozwiązania źródłowej aktywności po pingowaniu hosta 10.1.1.5 tablica MAC Switch0 zawiera jego adres 000c.85e9.a99d na Fa0/11. Wpis 0060.473e.9176 na Fa0/1 należy do PC0. Weryfikacja wymaga pliku Packet Tracer ze strony źródłowej.",
+      "image": {
+        "src": "https://itexamanswers.net/wp-content/uploads/2026/11/2026-11-17_090856.png",
+        "alt": "Topologia zadania Packet Tracer ze Switch0 i oznaczeniami portów."
+      }
+    },
+    {
+      "id": "m4-7-q048",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co oznacza termin tłumienie (attenuation) w komunikacji danych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spadek siły sygnału wraz ze wzrostem odległości"
+        },
+        {
+          "id": "b",
+          "text": "Czas potrzebny sygnałowi na dotarcie do celu"
+        },
+        {
+          "id": "c",
+          "text": "Przenikanie sygnałów z jednej pary przewodów do drugiej"
+        },
+        {
+          "id": "d",
+          "text": "Wzmacnianie sygnału przez urządzenie sieciowe"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.3.1. Tłumienie oznacza osłabianie sygnału podczas jego rozchodzenia się w medium. Nie należy mylić go z opóźnieniem ani przesłuchami."
+    },
+    {
+      "id": "m4-7-q049",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które trzy cechy sprawiają, że światłowód jest lepszy od miedzi do łączenia budynków? Wybierz trzy odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Większa długość pojedynczego odcinka kabla"
+        },
+        {
+          "id": "b",
+          "text": "Niższy koszt instalacji"
+        },
+        {
+          "id": "c",
+          "text": "Ograniczona podatność na EMI/RFI"
+        },
+        {
+          "id": "d",
+          "text": "Trwałość połączeń"
+        },
+        {
+          "id": "e",
+          "text": "Większy potencjał przepustowości"
+        },
+        {
+          "id": "f",
+          "text": "Łatwe zakańczanie przewodu"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Zagadnienie 4.5.1. Światłowód umożliwia duże odległości i wysokie przepustowości oraz jest odporny na EMI/RFI. Zachowano brzmienie opcji źródłowej o ograniczonej podatności, choć sam tor optyczny jest odporny na takie zakłócenia."
+    },
+    {
+      "id": "m4-7-q050",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który termin warstwy fizycznej OSI oznacza proces, w którym jedna fala modyfikuje drugą?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modulacja"
+        },
+        {
+          "id": "b",
+          "text": "IEEE"
+        },
+        {
+          "id": "c",
+          "text": "EIA/TIA"
+        },
+        {
+          "id": "d",
+          "text": "Powietrze"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.4. Modulacja polega na zmianie cechy fali nośnej, np. amplitudy, częstotliwości lub fazy, zgodnie z przesyłanym sygnałem."
+    },
+    {
+      "id": "m4-7-q051",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który termin warstwy fizycznej OSI określa maksymalną zdolność medium do przenoszenia danych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przepustowość nominalna (bandwidth)"
+        },
+        {
+          "id": "b",
+          "text": "IEEE"
+        },
+        {
+          "id": "c",
+          "text": "EIA/TIA"
+        },
+        {
+          "id": "d",
+          "text": "Powietrze"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.5. Bandwidth określa teoretyczną pojemność transmisyjną medium, wyrażaną w bitach na sekundę. Rzeczywisty transfer to throughput."
+    },
+    {
+      "id": "m4-7-q053",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który termin warstwy fizycznej OSI oznacza zmierzoną liczbę bitów przesłanych przez medium w określonym czasie?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rzeczywista szybkość transmisji (throughput)"
+        },
+        {
+          "id": "b",
+          "text": "Przepustowość nominalna (bandwidth)"
+        },
+        {
+          "id": "c",
+          "text": "Opóźnienie (latency)"
+        },
+        {
+          "id": "d",
+          "text": "Szybkość przesyłania danych użytecznych (goodput)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.6. Throughput opisuje rzeczywisty transfer bitów. Od bandwidth odróżnia go to, że jest pomiarem w praktycznych warunkach, a od goodput to, że uwzględnia również narzut transmisji."
+    },
+    {
+      "id": "m4-7-q054",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który termin warstwy fizycznej OSI określa czas potrzebny na przesłanie danych między dwoma punktami, z uwzględnieniem opóźnień?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Opóźnienie (latency)"
+        },
+        {
+          "id": "b",
+          "text": "Przepustowość nominalna (bandwidth)"
+        },
+        {
+          "id": "c",
+          "text": "Rzeczywista szybkość transmisji (throughput)"
+        },
+        {
+          "id": "d",
+          "text": "Szybkość przesyłania danych użytecznych (goodput)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.6. Latency obejmuje m.in. propagację, przetwarzanie, kolejkowanie i czas wprowadzania bitów do łącza."
+    },
+    {
+      "id": "m4-7-q055",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który termin warstwy fizycznej OSI określa czas potrzebny na przesłanie danych między dwoma punktami, z uwzględnieniem opóźnień?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Opóźnienie (latency)"
+        },
+        {
+          "id": "b",
+          "text": "Kabel światłowodowy"
+        },
+        {
+          "id": "c",
+          "text": "Powietrze"
+        },
+        {
+          "id": "d",
+          "text": "Kabel miedziany"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.6. Latency jest miarą czasu, a pozostałe odpowiedzi nazywają media transmisyjne. Zachowano odrębny wariant pytania źródłowego."
+    },
+    {
+      "id": "m4-7-q056",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Który termin warstwy fizycznej OSI oznacza ilość użytecznych danych przesłanych w jednostce czasu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Szybkość przesyłania danych użytecznych (goodput)"
+        },
+        {
+          "id": "b",
+          "text": "Kabel światłowodowy"
+        },
+        {
+          "id": "c",
+          "text": "Powietrze"
+        },
+        {
+          "id": "d",
+          "text": "Kabel miedziany"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.6. Goodput uwzględnia użyteczny ładunek aplikacji, z pominięciem narzutu protokołów i retransmisji. Throughput uwzględnia także taki narzut."
+    },
+    {
+      "id": "m4-7-q057",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Które medium warstwy fizycznej OSI przesyła dane za pomocą impulsów elektrycznych?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kabel miedziany"
+        },
+        {
+          "id": "b",
+          "text": "Kabel światłowodowy"
+        },
+        {
+          "id": "c",
+          "text": "Powietrze"
+        },
+        {
+          "id": "d",
+          "text": "Szybkość przesyłania danych użytecznych (goodput)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.3.1. Kable miedziane, np. UTP i STP, reprezentują bity przez sygnały elektryczne."
+    },
+    {
+      "id": "m4-7-q058",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Które medium warstwy fizycznej OSI wykorzystuje rozchodzenie się światła?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kabel światłowodowy"
+        },
+        {
+          "id": "b",
+          "text": "Szybkość przesyłania danych użytecznych (goodput)"
+        },
+        {
+          "id": "c",
+          "text": "Opóźnienie (latency)"
+        },
+        {
+          "id": "d",
+          "text": "Rzeczywista szybkość transmisji (throughput)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.4. Światłowód przenosi dane jako impulsy świetlne w szklanym lub plastikowym włóknie."
+    },
+    {
+      "id": "m4-7-q059",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Które medium warstwy fizycznej OSI służy do transmisji mikrofalowej?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Powietrze"
+        },
+        {
+          "id": "b",
+          "text": "Szybkość przesyłania danych użytecznych (goodput)"
+        },
+        {
+          "id": "c",
+          "text": "Opóźnienie (latency)"
+        },
+        {
+          "id": "d",
+          "text": "Rzeczywista szybkość transmisji (throughput)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 4.2.4. W transmisji bezprzewodowej fale radiowe lub mikrofalowe rozchodzą się w przestrzeni, tutaj określonej jako powietrze."
+    },
+    {
+      "id": "m4-7-q060",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa MAC warstwy łącza danych OSI? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "b",
+          "text": "Umieszcza w ramce informacje identyfikujące używany protokół warstwy sieciowej."
+        },
+        {
+          "id": "c",
+          "text": "Steruje kartą sieciową odpowiedzialną za nadawanie i odbieranie danych w medium fizycznym."
+        },
+        {
+          "id": "d",
+          "text": "Dodaje stopkę umożliwiającą wykrywanie błędów transmisji."
+        },
+        {
+          "id": "e",
+          "text": "Umożliwia IPv4 i IPv6 korzystanie z tego samego interfejsu sieciowego i medium."
+        }
+      ],
+      "correctOptionIds": [
+        "c",
+        "d"
+      ],
+      "explanation": "Zagadnienie 6.1.2. MAC obsługuje dostęp do medium, współpracę z kartą sieciową, synchronizację ramki oraz wykrywanie błędów przez FCS. Rozpoznawanie protokołu warstwy sieciowej i współpraca z wyższymi warstwami należą do LLC."
+    },
+    {
+      "id": "m4-7-q060-case2",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa MAC warstwy łącza danych OSI? Wybierz dwie odpowiedzi. Wariant 2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zapewnia synchronizację między węzłem źródłowym i docelowym."
+        },
+        {
+          "id": "b",
+          "text": "Integruje różne technologie fizyczne."
+        },
+        {
+          "id": "c",
+          "text": "Zapewnia komunikację między oprogramowaniem sieciowym wyższych warstw a sprzętem niższych warstw."
+        },
+        {
+          "id": "d",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "e",
+          "text": "Umożliwia IPv4 i IPv6 korzystanie z tego samego interfejsu sieciowego i medium."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b"
+      ],
+      "explanation": "Zagadnienie 6.1.2. MAC obsługuje dostęp do medium, współpracę z kartą sieciową, synchronizację ramki oraz wykrywanie błędów przez FCS. Rozpoznawanie protokołu warstwy sieciowej i współpraca z wyższymi warstwami należą do LLC."
+    },
+    {
+      "id": "m4-7-q060-case3",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa MAC warstwy łącza danych OSI? Wybierz dwie odpowiedzi. Wariant 3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umożliwia IPv4 i IPv6 korzystanie z tego samego interfejsu sieciowego i medium."
+        },
+        {
+          "id": "b",
+          "text": "Zapewnia synchronizację między węzłem źródłowym i docelowym."
+        },
+        {
+          "id": "c",
+          "text": "Dodaje stopkę umożliwiającą wykrywanie błędów transmisji."
+        },
+        {
+          "id": "d",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "e",
+          "text": "Umieszcza w ramce informacje identyfikujące używany protokół warstwy sieciowej."
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "c"
+      ],
+      "explanation": "Zagadnienie 6.1.2. MAC obsługuje dostęp do medium, współpracę z kartą sieciową, synchronizację ramki oraz wykrywanie błędów przez FCS. Rozpoznawanie protokołu warstwy sieciowej i współpraca z wyższymi warstwami należą do LLC."
+    },
+    {
+      "id": "m4-7-q060-case4",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa MAC warstwy łącza danych OSI? Wybierz dwie odpowiedzi. Wariant 4.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umożliwia IPv4 i IPv6 korzystanie z tego samego interfejsu sieciowego i medium."
+        },
+        {
+          "id": "b",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "c",
+          "text": "Integruje różne technologie fizyczne."
+        },
+        {
+          "id": "d",
+          "text": "Zapewnia komunikację między oprogramowaniem sieciowym wyższych warstw a sprzętem niższych warstw."
+        },
+        {
+          "id": "e",
+          "text": "Zapewnia synchronizację między węzłem źródłowym i docelowym."
+        }
+      ],
+      "correctOptionIds": [
+        "c",
+        "e"
+      ],
+      "explanation": "Zagadnienie 6.1.2. MAC obsługuje dostęp do medium, współpracę z kartą sieciową, synchronizację ramki oraz wykrywanie błędów przez FCS. Rozpoznawanie protokołu warstwy sieciowej i współpraca z wyższymi warstwami należą do LLC."
+    },
+    {
+      "id": "m4-7-q060-case5",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa MAC warstwy łącza danych OSI? Wybierz dwie odpowiedzi. Wariant 5.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umieszcza w ramce informacje identyfikujące używany protokół warstwy sieciowej."
+        },
+        {
+          "id": "b",
+          "text": "Integruje różne technologie fizyczne."
+        },
+        {
+          "id": "c",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "d",
+          "text": "Steruje kartą sieciową odpowiedzialną za nadawanie i odbieranie danych w medium fizycznym."
+        },
+        {
+          "id": "e",
+          "text": "Zapewnia komunikację między oprogramowaniem sieciowym wyższych warstw a sprzętem niższych warstw."
+        }
+      ],
+      "correctOptionIds": [
+        "b",
+        "d"
+      ],
+      "explanation": "Zagadnienie 6.1.2. MAC obsługuje dostęp do medium, współpracę z kartą sieciową, synchronizację ramki oraz wykrywanie błędów przez FCS. Rozpoznawanie protokołu warstwy sieciowej i współpraca z wyższymi warstwami należą do LLC."
+    },
+    {
+      "id": "m4-7-q060-case6",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa MAC warstwy łącza danych OSI? Wybierz dwie odpowiedzi. Wariant 6.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Steruje kartą sieciową odpowiedzialną za nadawanie i odbieranie danych w medium fizycznym."
+        },
+        {
+          "id": "b",
+          "text": "Zapewnia mechanizm umożliwiający wielu urządzeniom komunikację przez współdzielone medium."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b"
+      ],
+      "explanation": "Zagadnienie 6.1.2. MAC obsługuje dostęp do medium, współpracę z kartą sieciową, synchronizację ramki oraz wykrywanie błędów przez FCS. Rozpoznawanie protokołu warstwy sieciowej i współpraca z wyższymi warstwami należą do LLC. W źródle wariant 6 zawiera tylko dwie opcje; obie są oznaczone jako poprawne. Zachowano ten układ bez dopisywania odpowiedzi."
+    },
+    {
+      "id": "m4-7-q061",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa LLC warstwy łącza danych OSI? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umożliwia IPv4 i IPv6 korzystanie z tego samego interfejsu sieciowego i medium."
+        },
+        {
+          "id": "b",
+          "text": "Umieszcza w ramce informacje identyfikujące używany protokół warstwy sieciowej."
+        },
+        {
+          "id": "c",
+          "text": "Integruje różne technologie fizyczne."
+        },
+        {
+          "id": "d",
+          "text": "Wyznacza granice pól w ramce warstwy 2."
+        },
+        {
+          "id": "e",
+          "text": "Steruje kartą sieciową odpowiedzialną za nadawanie i odbieranie danych w medium fizycznym."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b"
+      ],
+      "explanation": "Zagadnienie 6.1.2. LLC jest realizowana programowo i pośredniczy między protokołami warstwy sieciowej a MAC. Identyfikuje protokół warstwy 3, dodaje informacje sterujące i pozwala współdzielić interfejs przez IPv4 oraz IPv6."
+    },
+    {
+      "id": "m4-7-q064",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa LLC warstwy łącza danych OSI? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "b",
+          "text": "Umieszcza w ramce informacje identyfikujące używany protokół warstwy sieciowej."
+        },
+        {
+          "id": "c",
+          "text": "Wykonuje enkapsulację danych."
+        },
+        {
+          "id": "d",
+          "text": "Steruje kartą sieciową odpowiedzialną za nadawanie i odbieranie danych w medium fizycznym."
+        },
+        {
+          "id": "e",
+          "text": "Integruje różne technologie fizyczne."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b"
+      ],
+      "explanation": "Zagadnienie 6.1.2. LLC jest realizowana programowo i pośredniczy między protokołami warstwy sieciowej a MAC. Identyfikuje protokół warstwy 3, dodaje informacje sterujące i pozwala współdzielić interfejs przez IPv4 oraz IPv6. Ogólna enkapsulacja ramki jest w kontekście kursu zadaniem MAC; opcje o informacjach sterujących i identyfikacji protokołu wskazują konkretnie LLC."
+    },
+    {
+      "id": "m4-7-q066",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa LLC warstwy łącza danych OSI? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "b",
+          "text": "Umożliwia IPv4 i IPv6 korzystanie z tego samego interfejsu sieciowego i medium."
+        },
+        {
+          "id": "c",
+          "text": "Zapewnia adresowanie w warstwie łącza danych."
+        },
+        {
+          "id": "d",
+          "text": "Dodaje stopkę umożliwiającą wykrywanie błędów transmisji."
+        },
+        {
+          "id": "e",
+          "text": "Zapewnia synchronizację między węzłem źródłowym i docelowym."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b"
+      ],
+      "explanation": "Zagadnienie 6.1.2. LLC jest realizowana programowo i pośredniczy między protokołami warstwy sieciowej a MAC. Identyfikuje protokół warstwy 3, dodaje informacje sterujące i pozwala współdzielić interfejs przez IPv4 oraz IPv6."
+    },
+    {
+      "id": "m4-7-q068",
+      "moduleId": "4-7",
+      "type": "multiple_select",
+      "prompt": "Które dwie funkcje wykonuje podwarstwa LLC warstwy łącza danych OSI? Wybierz dwie odpowiedzi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umożliwia IPv4 i IPv6 korzystanie z tego samego interfejsu sieciowego i medium."
+        },
+        {
+          "id": "b",
+          "text": "Dodaje informacje sterujące warstwy 2 do danych protokołu sieciowego."
+        },
+        {
+          "id": "c",
+          "text": "Integruje różne technologie fizyczne."
+        },
+        {
+          "id": "d",
+          "text": "Dodaje stopkę umożliwiającą wykrywanie błędów transmisji."
+        },
+        {
+          "id": "e",
+          "text": "Zapewnia synchronizację między węzłem źródłowym i docelowym."
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b"
+      ],
+      "explanation": "Zagadnienie 6.1.2. LLC jest realizowana programowo i pośredniczy między protokołami warstwy sieciowej a MAC. Identyfikuje protokół warstwy 3, dodaje informacje sterujące i pozwala współdzielić interfejs przez IPv4 oraz IPv6."
+    },
+    {
+      "id": "m4-7-q071",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co zrobi przełącznik po odebraniu ramki z docelowym adresem MAC FF:FF:FF:FF:FF:FF?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przekaże ją wszystkimi portami poza portem, na którym ją odebrał."
+        },
+        {
+          "id": "b",
+          "text": "Odświeży licznik czasu odpowiedniego wpisu."
+        },
+        {
+          "id": "c",
+          "text": "Nie przekaże ramki dalej."
+        },
+        {
+          "id": "d",
+          "text": "Wyśle ramkę do podłączonego routera, ponieważ docelowy MAC nie jest lokalny."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.2.5. Jest to adres broadcast. Przełącznik rozsyła ramkę przez pozostałe porty w tej samej sieci VLAN, które mogą ją przekazywać; nie wysyła jej z powrotem portem wejściowym."
+    },
+    {
+      "id": "m4-7-q073",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co zrobi przełącznik po odebraniu ramki z docelowym adresem MAC 01:00:5E:00:00:D9?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przekaże ją wszystkimi portami poza portem, na którym ją odebrał."
+        },
+        {
+          "id": "b",
+          "text": "Nie przekaże ramki dalej."
+        },
+        {
+          "id": "c",
+          "text": "Wyśle ramkę do podłączonego routera, ponieważ docelowy MAC nie jest lokalny."
+        },
+        {
+          "id": "d",
+          "text": "Udostępni wpis tablicy MAC wszystkim podłączonym przełącznikom."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.2.6. Jest to multicast IPv4. W uproszczonym scenariuszu źródłowym przełącznik rozsyła multicast po pozostałych portach tej samej VLAN. IGMP snooping lub inne mechanizmy filtrowania multicast mogą ograniczyć zbiór portów."
+    },
+    {
+      "id": "m4-7-q074",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co zrobi host po odebraniu ramki z docelowym adresem MAC FF:FF:FF:FF:FF:FF?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przetworzy ramkę."
+        },
+        {
+          "id": "b",
+          "text": "Przekaże ramkę do routera."
+        },
+        {
+          "id": "c",
+          "text": "Wyśle ramkę do przełącznika, aby zaktualizować tablicę MAC."
+        },
+        {
+          "id": "d",
+          "text": "Przekaże ramkę do wszystkich pozostałych hostów."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.2.5. Host akceptuje ramkę broadcast i przekazuje ją do swojego stosu protokołów. Zwykły host nie rozsyła jej dalej jak przełącznik."
+    },
+    {
+      "id": "m4-7-q075",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co zrobi przełącznik po odebraniu ramki, jeżeli jej źródłowy adres MAC już znajduje się w tablicy MAC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Odświeży licznik czasu tego wpisu."
+        },
+        {
+          "id": "b",
+          "text": "Doda ten adres do tablicy MAC wraz z numerem portu."
+        },
+        {
+          "id": "c",
+          "text": "Przekaże ramkę do portu powiązanego z tym adresem."
+        },
+        {
+          "id": "d",
+          "text": "Wyśle ramkę do routera, ponieważ docelowy MAC nie jest lokalny."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.3.2. Jeśli źródłowy MAC jest znany na tym samym porcie, przełącznik odświeża czas starzenia wpisu. Jeśli adres pojawi się na innym porcie, aktualizuje także przypisanie portu. Docelowy MAC osobno decyduje o przekazaniu ramki."
+    },
+    {
+      "id": "m4-7-q076",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co zrobi host po odebraniu ramki z docelowym adresem MAC FF:FF:FF:FF:FF:FF?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Przetworzy ramkę."
+        },
+        {
+          "id": "b",
+          "text": "Zwróci ramkę do przełącznika."
+        },
+        {
+          "id": "c",
+          "text": "Odpowie przełącznikowi swoim adresem IP."
+        },
+        {
+          "id": "d",
+          "text": "Przekaże ramkę do wszystkich pozostałych hostów."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.2.5. FF:FF:FF:FF:FF:FF jest adresem broadcast, więc host przyjmuje ramkę do przetwarzania. Zachowano osobny wariant źródłowy z innymi opcjami."
+    },
+    {
+      "id": "m4-7-q078",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Co zrobi host po odebraniu ramki z docelowym adresem MAC, którego nie rozpoznaje jako przeznaczonego dla siebie?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Odrzuci ramkę."
+        },
+        {
+          "id": "b",
+          "text": "Odpowie przełącznikowi swoim adresem IP."
+        },
+        {
+          "id": "c",
+          "text": "Przekaże ramkę do wszystkich pozostałych hostów."
+        },
+        {
+          "id": "d",
+          "text": "Zwróci ramkę do przełącznika."
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Zagadnienie 7.2.3. W zwykłym trybie karta akceptuje własny unicast, broadcast i multicast, do którego host należy. Ramkę z innym docelowym adresem unicast odrzuca. Tryb promiscuous jest wyjątkiem od tego zachowania."
+    },
+    {
+      "id": "m4-7-q079",
+      "moduleId": "4-7",
+      "type": "single_select",
+      "prompt": "Jakiego typu kabla UTP standardowo używa się do podłączenia komputera do portu Ethernet przełącznika?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kabla konsolowego"
+        },
+        {
+          "id": "b",
+          "text": "Kabla rollover"
+        },
+        {
+          "id": "c",
+          "text": "Kabla krosowanego"
+        },
+        {
+          "id": "d",
+          "text": "Kabla prostego"
+        }
+      ],
+      "correctOptionIds": [
+        "d"
+      ],
+      "explanation": "Zagadnienie 4.4.3. Tradycyjnym wyborem dla połączenia komputer–przełącznik jest kabel prosty. Kabel rollover służy do konsoli; auto-MDIX może pozwalać także na kabel krosowany."
+    }
+  ]
+}

@@ -35,13 +35,14 @@ export default function App() {
           savedBank = parseBank(saved);
         }
       } catch { storageNotice = 'Nie udało się odczytać zapisanych pytań. Wyświetlamy dostępną bazę.'; }
-      try {
-        const response = await fetch('/questions.json');
-        if (!response.ok) throw new Error();
-        const parsed = parseBank(await response.text());
-        builtInBank = parsed;
-      } catch {
-        storageNotice = 'Nie udało się wczytać wbudowanych pytań. Odśwież stronę i spróbuj ponownie.';
+      for (const path of ['/questions.json', '/questions-4-7.json']) {
+        try {
+          const response = await fetch(path);
+          if (!response.ok) throw new Error();
+          builtInBank = mergeBanks(builtInBank, parseBank(await response.text()));
+        } catch {
+          storageNotice = 'Nie udało się wczytać części wbudowanych pytań. Odśwież stronę i spróbuj ponownie.';
+        }
       }
       if (active) {
         setBank(mergeBanks(builtInBank, savedBank));
@@ -95,7 +96,7 @@ export default function App() {
 
         <div className="module-workspace">
           <nav className="module-list" aria-label="Wybierz moduł">
-            {modules.filter(module => module.id === '1-3').map(module => <Button key={module.id} variant="ghost" className={`module-option ${moduleId === module.id ? 'selected' : ''}`} aria-pressed={moduleId === module.id} onPress={() => setModuleId(module.id)}>
+            {modules.filter(module => module.id === '1-3' || module.id === '4-7').map(module => <Button key={module.id} variant="ghost" className={`module-option ${moduleId === module.id ? 'selected' : ''}`} aria-pressed={moduleId === module.id} onPress={() => setModuleId(module.id)}>
               <span className="module-number">{String(module.id).padStart(2, '0')}</span><span>{module.title}</span><span className="module-count" aria-hidden="true">{counts.get(module.id)}</span><span className="visually-hidden">{questionCount(counts.get(module.id))}</span>
             </Button>)}
           </nav>

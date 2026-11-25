@@ -19,6 +19,7 @@ export const modules = [
 ].map(([title, description], index) => ({ id: index + 1, title, description }));
 
 modules.push({ id: '1-3', title: 'Łączność i komunikacja', description: 'Sprawdzian z modułów 1–3: podstawy sieci, konfiguracja urządzeń oraz protokoły i modele komunikacji.' });
+modules.push({ id: '4-7', title: 'Pojęcia Ethernet', description: 'Sprawdzian z modułów 4–7: warstwa fizyczna, systemy liczbowe, warstwa łącza danych i przełączanie Ethernet.' });
 
 export function questionCount(count) {
   const ending = count % 10;

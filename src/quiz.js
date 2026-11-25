@@ -28,7 +28,7 @@ export function validateBank(value) {
     requireId(q.id, `${label}, id`);
     requireText(q.prompt, `${label}, treść`);
     if (!modules.some(module => module.id === q.moduleId)) {
-      throw new Error(`${label}: moduleId musi wskazywać moduł 1–17 lub sprawdzian "1-3".`);
+      throw new Error(`${label}: moduleId musi wskazywać moduł 1–17 lub sprawdzian "1-3" albo "4-7".`);
     }
     if (q.explanation !== undefined) requireText(q.explanation, `${label}, wyjaśnienie`);
     if (q.image !== undefined) {

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { mergeBanks, parseBank } from '../src/bank.js';
+import { selectQuestions, isCorrect } from '../src/quiz.js';
 
 test('loads the real format example and the translated modules 1–3 bank', async () => {
   const example = parseBank(await readFile(new URL('../public/example-bank.json', import.meta.url), 'utf8'));
@@ -13,6 +14,26 @@ test('loads the real format example and the translated modules 1–3 bank', asyn
   assert.ok(shipped.questions.every(q => q.moduleId === '1-3'));
   for (const q of shipped.questions.filter(q => q.image)) {
     assert.ok((await readFile(new URL(`../public${q.image.src}`, import.meta.url))).length > 0);
+  }
+});
+
+test('imports modules 4–7 separately and merges both checkpoints without losing questions', async () => {
+  const first = parseBank(await readFile(new URL('../public/questions.json', import.meta.url), 'utf8'));
+  const ethernet = parseBank(await readFile(new URL('../public/questions-4-7.json', import.meta.url), 'utf8'));
+  assert.equal(ethernet.questions.length, 75);
+  assert.ok(ethernet.questions.every(q => q.moduleId === '4-7'));
+  assert.equal(ethernet.questions.filter(q => q.type === 'single_select').length, 50);
+  assert.equal(ethernet.questions.filter(q => q.type === 'multiple_select').length, 24);
+  assert.equal(ethernet.questions.filter(q => q.type === 'matching').length, 1);
+  assert.equal(ethernet.questions.filter(q => q.id.startsWith('m4-7-q060')).length, 6);
+  const merged = mergeBanks(first, ethernet);
+  assert.equal(merged.questions.length, 150);
+  for (const bank of [first, ethernet]) {
+    assert.deepEqual(selectQuestions(merged.questions, bank.questions[0].moduleId, 100).map(q => q.id).sort(), bank.questions.map(q => q.id).sort());
+  }
+  for (const q of ethernet.questions) {
+    const answer = q.type === 'matching' ? Object.fromEntries(q.pairs.map(pair => [pair.id, pair.answer])) : q.correctOptionIds;
+    assert.ok(isCorrect(q, answer), q.id);
   }
 });
 

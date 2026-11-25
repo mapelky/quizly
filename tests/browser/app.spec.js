@@ -2,12 +2,14 @@ import { test, expect } from '@playwright/test';
 import { existsSync, readFileSync } from 'node:fs';
 
 const bank = JSON.parse(readFileSync(new URL('../../public/questions.json', import.meta.url)));
+const ethernet = JSON.parse(readFileSync(new URL('../../public/questions-4-7.json', import.meta.url)));
 const single = bank.questions.find(q => q.type === 'single_select');
 const multiple = bank.questions.find(q => q.type === 'multiple_select');
 const matching = bank.questions.find(q => q.type === 'matching');
 
 async function useQuestions(page, questions) {
   await page.route('**/questions.json', route => route.fulfill({ json: { version: 1, questions } }));
+  await page.route('**/questions-4-7.json', route => route.fulfill({ json: { version: 1, questions: [] } }));
 }
 
 async function start(page, mode = 'quick', url = '/') {
@@ -47,6 +49,37 @@ test('blocks indexing in HTML and HTTP headers, including assets and dev', async
   await page.getByRole('link', { name: 'Moduły i pytania' }).click();
   await expect(page).toHaveTitle('Quizly | Moduły');
   await expect(page.locator('.question-previews > *')).toHaveCount(75);
+});
+
+test('keeps checkpoints separate and completes a 40-question modules 4–7 exam', async ({ page }) => {
+  await page.goto('/moduly');
+  await expect(page.locator('.bank-information')).toContainText('150 pytań');
+  await expect(page.locator('.question-previews > *')).toHaveCount(75);
+  await page.getByRole('button', { name: /4-7.*Pojęcia Ethernet/ }).click();
+  await expect(page.locator('#module-title')).toHaveText('Pojęcia Ethernet');
+  await expect(page.locator('.question-previews > *')).toHaveCount(75);
+  await page.getByRole('button', { name: 'Test z modułu', exact: true }).click();
+  for (let i = 0; i < 40; i++) {
+    await expect(page.locator('.question-meta')).toContainText('4-7');
+    const prompt = await page.locator('#question-title').textContent();
+    const inputs = page.locator('.answers input');
+    const id = await inputs.count() ? await inputs.first().getAttribute('name') : null;
+    const question = ethernet.questions.find(q => id ? q.id === id : q.prompt === prompt);
+    expect(question).toBeTruthy();
+    await answer(page, question);
+    await page.getByRole('button', { name: i === 39 ? 'Zakończ test' : 'Dalej', exact: false }).click();
+  }
+  await expect(page.locator('.score-summary')).toContainText('40 z 40 poprawnych');
+});
+
+test('keeps modules 1–3 usable when the modules 4–7 bank cannot load', async ({ page }) => {
+  await page.route('**/questions-4-7.json', route => route.abort());
+  await page.goto('/moduly');
+  await expect(page.getByRole('alert')).toContainText('części wbudowanych pytań');
+  await expect(page.locator('.bank-information')).toContainText('75 pytań');
+  await expect(page.locator('.question-previews > *')).toHaveCount(75);
+  await page.getByRole('button', { name: 'Test z modułu', exact: true }).click();
+  await expect(page.locator('.question-meta')).toContainText('1-3');
 });
 
 for (const asset of ['kernel.js', 'register.js', 'network.js']) {

@@ -1,6 +1,6 @@
 # Quizly
 
-A study app with quizzes imported from JSON files. Includes 75 Polish CCNA questions covering modules 1–3.
+A study app with quizzes imported from JSON files. Includes 150 Polish CCNA questions in separate checkpoints for modules 1–3 and 4–7.
 
 - A 40-question random quiz with a score and answer review.
 - Single-question practice with feedback and an explanation.
@@ -31,7 +31,7 @@ npm run preview                 # preview the build locally
 
 ## Data and deployment
 
-Questions live in [public/questions.json](public/questions.json). See the [format example](public/example-bank.json) and [source notes and limitations](docs/moduly-1-3-import.md) (in Polish).
+Questions live in [public/questions.json](public/questions.json) (modules 1–3) and [public/questions-4-7.json](public/questions-4-7.json) (modules 4–7). See the [format example](public/example-bank.json) and source notes for [modules 1–3](docs/moduly-1-3-import.md) and [modules 4–7](docs/moduly-4-7-import.md) (in Polish).
 
 Deploy the `dist/` directory. Configure `/moduly` to fall back to `index.html`.
 Search indexing is intentionally disabled: the HTML includes `noindex, nofollow`, and Vite adds an `X-Robots-Tag` header.
