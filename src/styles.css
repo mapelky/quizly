@@ -206,6 +206,14 @@ p { max-width: 65ch; }
 .score-summary strong { font-weight: 600; font-size: 5rem; }
 .start-hint { font-size: .75rem; line-height: 1.75; color: var(--muted); margin-top: 12px; }
 
+@media (min-width: 1024px) {
+  .quiz-content--exam { display: grid; grid-template-columns: minmax(0, 1fr) 272px; grid-template-rows: auto auto 1fr; column-gap: var(--space-section); max-width: none; align-items: start; }
+  .quiz-content--exam .question-surface { grid-column: 1; grid-row: 1 / 4; min-width: 0; }
+  .quiz-content--exam .quiz-progress-label { grid-column: 2; grid-row: 1; flex-direction: column; gap: 4px; }
+  .quiz-content--exam .quiz-progress { grid-column: 2; grid-row: 2; margin-bottom: var(--space-lg); }
+  .quiz-content--exam .question-map { grid-column: 2; grid-row: 3; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 0; }
+}
+
 @media (max-width: 900px) {
   .module-workspace { grid-template-columns: 250px minmax(0, 1fr); gap: 32px; }
 }
